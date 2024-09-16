@@ -1,0 +1,38 @@
+# Temporary folders #
+#####################
+fsh-generated
+temp
+template
+output
+bundles/*/
+input-cache
+
+# Don't commit this because it's so large #
+###########################################
+# /input-cache/org.hl7.fhir.publisher.jar
+# /input-cache/publisher.jar
+# /input-cache/tooling*
+
+# Ignore test bundles, etc. generated via _refresh #
+/input/tests/*Example/example/*-bundle.json
+
+# Ignore test results from execution in VS Code #
+/input/tests/results
+
+# Windows generated files #
+###########################
+Thumbs.db
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+
+# backup files #
+################
+*.bak
+
+# work-in-progress local dev work #
+################
+/input/cql_work-in-progress
+/input/vocabulary/ValueSet/internal

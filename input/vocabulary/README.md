@@ -1,0 +1,3 @@
+## Internal CodeSystem and ValueSet resources
+
+In order to execute CQL within VS Code, or to run _refresh to refresh and bundle Measures, you ***MUST*** copy the internal value sets, with expansion, from /vocabulary-internal/ValueSet into /input/vocabulary/ValueSet/internal folder.  Internal terminology resources are defined in FSH files and are generated as part of the IG build process.  However, if the resulting resources copied into this folder (/input/vocabulary/) to enable CQL execution, they will cause the SUSHI build and IG publication to fail because these resource appear as duplicates to FSH definitions with the same URI.
