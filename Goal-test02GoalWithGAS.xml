@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Goal xmlns="http://hl7.org/fhir">
+  <id value="test02GoalWithGAS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Goal test02GoalWithGAS</b></p><a name="test02GoalWithGAS"> </a><a name="hctest02GoalWithGAS"> </a><a name="test02GoalWithGAS-en-US"> </a><blockquote><p><b>Goal Attainment Scaling</b></p><ul><li>level: <a href="https://loinc.org/gas-much-better-than-expected">Logical Observation Identifiers, Names and Codes (LOINC)</a> gas-much-better-than-expected: Much better than expected</li><li>text: Walk dog outside three times a week</li></ul></blockquote><blockquote><p><b>Goal Attainment Scaling</b></p><ul><li>level: <a href="https://loinc.org/gas-better-than-expected">Logical Observation Identifiers, Names and Codes (LOINC)</a> gas-better-than-expected: Better than expected</li><li>text: Walk dog outside twice a week</li></ul></blockquote><blockquote><p><b>Goal Attainment Scaling</b></p><ul><li>level: <a href="https://loinc.org/gas-expected-outcome">Logical Observation Identifiers, Names and Codes (LOINC)</a> gas-expected-outcome: Expected outcome</li><li>text: Walk dog outside once a week</li></ul></blockquote><blockquote><p><b>Goal Attainment Scaling</b></p><ul><li>level: <a href="https://loinc.org/gas-less-than-expected">Logical Observation Identifiers, Names and Codes (LOINC)</a> gas-less-than-expected: Less than expected</li><li>text: Does not walk dog but goes outside with dog</li></ul></blockquote><blockquote><p><b>Goal Attainment Scaling</b></p><ul><li>level: <a href="https://loinc.org/gas-much-less-than-expected">Logical Observation Identifiers, Names and Codes (LOINC)</a> gas-much-less-than-expected: Much less than expected</li><li>text: Unable to go outside with dog</li></ul></blockquote><p><b>lifecycleStatus</b>: Active</p><p><b>achievementStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/goal-achievement in-progress}">In Progress</span></p><p><b>category</b>: <span title="Codes:{http://mtnlotus.com/uv/pco/CodeSystem/ncqa-goal-domains physical-function}">Physical Function</span></p><p><b>description</b>: <span title="Codes:">Walk dog outside once a week</span></p><p><b>subject</b>: <a href="Patient-test02Patient.html">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>start</b>: 2024-04-03</p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Due[x]</b></td></tr><tr><td style="display: none">*</td><td>2024-09-30</td></tr></table><p><b>expressedBy</b>: <a href="Patient-test02Patient.html">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p></div>
+  </text>
+  <extension url="http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling">
+    <extension url="level">
+      <valueCoding>
+        <system value="http://loinc.org"/>
+        <code value="gas-much-better-than-expected"/>
+        <display value="Much better than expected"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="Walk dog outside three times a week"/>
+    </extension>
+  </extension>
+  <extension url="http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling">
+    <extension url="level">
+      <valueCoding>
+        <system value="http://loinc.org"/>
+        <code value="gas-better-than-expected"/>
+        <display value="Better than expected"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="Walk dog outside twice a week"/>
+    </extension>
+  </extension>
+  <extension url="http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling">
+    <extension url="level">
+      <valueCoding>
+        <system value="http://loinc.org"/>
+        <code value="gas-expected-outcome"/>
+        <display value="Expected outcome"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="Walk dog outside once a week"/>
+    </extension>
+  </extension>
+  <extension url="http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling">
+    <extension url="level">
+      <valueCoding>
+        <system value="http://loinc.org"/>
+        <code value="gas-less-than-expected"/>
+        <display value="Less than expected"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="Does not walk dog but goes outside with dog"/>
+    </extension>
+  </extension>
+  <extension url="http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling">
+    <extension url="level">
+      <valueCoding>
+        <system value="http://loinc.org"/>
+        <code value="gas-much-less-than-expected"/>
+        <display value="Much less than expected"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="Unable to go outside with dog"/>
+    </extension>
+  </extension>
+  <lifecycleStatus value="active"/>
+  <achievementStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/goal-achievement"/>
+      <code value="in-progress"/>
+    </coding>
+  </achievementStatus>
+  <category>
+    <coding>
+      <system value="http://mtnlotus.com/uv/pco/CodeSystem/ncqa-goal-domains"/>
+      <code value="physical-function"/>
+      <display value="Physical Function"/>
+    </coding>
+  </category>
+  <description>
+    <text value="Walk dog outside once a week"/>
+  </description>
+  <subject>
+    <reference value="Patient/test02Patient"/>
+  </subject>
+  <startDate value="2024-04-03"/>
+  <target>
+    <dueDate value="2024-09-30"/>
+  </target>
+  <expressedBy>
+    <reference value="Patient/test02Patient"/>
+  </expressedBy>
+</Goal>

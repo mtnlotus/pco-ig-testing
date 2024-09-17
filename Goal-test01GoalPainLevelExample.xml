@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Goal xmlns="http://hl7.org/fhir">
+  <id value="test01GoalPainLevelExample"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Goal test01GoalPainLevelExample</b></p><a name="test01GoalPainLevelExample"> </a><a name="hctest01GoalPainLevelExample"> </a><a name="test01GoalPainLevelExample-en-US"> </a><p><b>lifecycleStatus</b>: Active</p><p><b>achievementStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/goal-achievement in-progress}">In Progress</span></p><p><b>description</b>: <span title="Codes:">Maintain pain level below 5 while walking</span></p><p><b>subject</b>: <a href="Patient-test01Patient.html">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>start</b>: 2024-02-15</p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Due[x]</b></td></tr><tr><td style="display: none">*</td><td>2024-06-30</td></tr></table><p><b>expressedBy</b>: <a href="Practitioner-pcoPractitionerAnderson.html">Practitioner John Anderson, MD</a></p></div>
+  </text>
+  <lifecycleStatus value="active"/>
+  <achievementStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/goal-achievement"/>
+      <code value="in-progress"/>
+    </coding>
+  </achievementStatus>
+  <description>
+    <text value="Maintain pain level below 5 while walking"/>
+  </description>
+  <subject>
+    <reference value="Patient/test01Patient"/>
+  </subject>
+  <startDate value="2024-02-15"/>
+  <target>
+    <dueDate value="2024-06-30"/>
+  </target>
+  <expressedBy>
+    <reference value="Practitioner/pcoPractitionerAnderson"/>
+  </expressedBy>
+</Goal>

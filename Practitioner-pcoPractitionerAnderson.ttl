@@ -1,0 +1,29 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mtnlotus.com/fhir/pco-testing/Practitioner/pcoPractitionerAnderson> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "pcoPractitionerAnderson"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner pcoPractitionerAnderson</b></p><a name=\"pcoPractitionerAnderson\"> </a><a name=\"hcpcoPractitionerAnderson\"> </a><a name=\"pcoPractitionerAnderson-en-US\"> </a><p><b>identifier</b>: <code>http://example.org</code>/ee8d4ac0-545c-4501-8d7e-646bfbda6de8 (use: official, )</p><p><b>name</b>: John Anderson, MD</p><p><b>gender</b>: Male</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://example.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ee8d4ac0-545c-4501-8d7e-646bfbda6de8" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "John Anderson, MD" ] ;
+     fhir:family [ fhir:v "Anderson" ] ;
+     fhir:given ( [ fhir:v "John" ] ) ;
+     fhir:suffix ( [ fhir:v "MD" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="pcoPractitionerAnderson"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner pcoPractitionerAnderson</b></p><a name="pcoPractitionerAnderson"> </a><a name="hcpcoPractitionerAnderson"> </a><a name="pcoPractitionerAnderson-en-US"> </a><p><b>identifier</b>: <code>http://example.org</code>/ee8d4ac0-545c-4501-8d7e-646bfbda6de8 (use: official, )</p><p><b>name</b>: John Anderson, MD</p><p><b>gender</b>: Male</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="http://example.org"/>
+    <value value="ee8d4ac0-545c-4501-8d7e-646bfbda6de8"/>
+  </identifier>
+  <name>
+    <text value="John Anderson, MD"/>
+    <family value="Anderson"/>
+    <given value="John"/>
+    <suffix value="MD"/>
+  </name>
+  <gender value="male"/>
+</Practitioner>

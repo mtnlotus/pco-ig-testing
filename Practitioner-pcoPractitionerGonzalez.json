@@ -1,0 +1,20 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "pcoPractitionerGonzalez",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner pcoPractitionerGonzalez</b></p><a name=\"pcoPractitionerGonzalez\"> </a><a name=\"hcpcoPractitionerGonzalez\"> </a><a name=\"pcoPractitionerGonzalez-en-US\"> </a><p><b>identifier</b>: <code>http://example.org</code>/ee8d4ac0-545c-4501-8d7e-646bfbda6cd7\u00a0(use:\u00a0official,\u00a0)</p><p><b>name</b>: Maria Gonzalez, NBC-HWC</p><p><b>gender</b>: Female</p></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://example.org",
+    "value" : "ee8d4ac0-545c-4501-8d7e-646bfbda6cd7"
+  }],
+  "name" : [{
+    "text" : "Maria Gonzalez, NBC-HWC",
+    "family" : "Gonzalez",
+    "given" : ["Maria"],
+    "suffix" : ["NBC-HWC"]
+  }],
+  "gender" : "female"
+}

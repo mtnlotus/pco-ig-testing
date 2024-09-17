@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://mtnlotus.com/fhir/pco-testing/CarePlan/test04CarePlan> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "test04CarePlan"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan test04CarePlan</b></p><a name=\"test04CarePlan\"> </a><a name=\"hctest04CarePlan\"> </a><a name=\"test04CarePlan-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title=\"Codes:{http://mtnlotus.com/uv/pco/CodeSystem/ncqa-goal-domains physical-function}\">Physical Function</span>, <span title=\"Codes:{http://mtnlotus.com/uv/pco/CodeSystem/ncqa-goal-domains independence}\">Independence</span>, <span title=\"Codes:{http://hl7.org/fhir/us/core/CodeSystem/careplan-category assess-plan}\">Assessment and Plan of Treatment</span></p><p><b>subject</b>: <a href=\"Patient-test04Patient.html\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>period</b>: 2024-04-03 --&gt; 2024-10-31</p><p><b>goal</b>: <a href=\"Goal-test04GoalWithGAS.html\">Goal: lifecycleStatus = active; achievementStatus = In Progress; category = Physical Function; description = ; start[x] = 2024-04-03</a></p><h3>Activities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"ServiceRequest-test04WalkOutsideActionStep.html\">ServiceRequest </a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://mtnlotus.com/uv/pco/CodeSystem/ncqa-goal-domains"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "physical-function" ] ;
+       fhir:display [ fhir:v "Physical Function" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://mtnlotus.com/uv/pco/CodeSystem/ncqa-goal-domains"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "independence" ] ;
+       fhir:display [ fhir:v "Independence" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/core/CodeSystem/careplan-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "assess-plan" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://mtnlotus.com/fhir/pco-testing/Patient/test04Patient> ;
+     fhir:reference [ fhir:v "Patient/test04Patient" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2024-04-03"^^xsd:date ] ;
+     fhir:end [ fhir:v "2024-10-31"^^xsd:date ]
+  ] ; # 
+  fhir:goal ( [
+     fhir:link <http://mtnlotus.com/fhir/pco-testing/Goal/test04GoalWithGAS> ;
+     fhir:reference [ fhir:v "Goal/test04GoalWithGAS" ]
+  ] ) ; # 
+  fhir:activity ( [
+     fhir:reference [
+       fhir:link <http://mtnlotus.com/fhir/pco-testing/ServiceRequest/test04WalkOutsideActionStep> ;
+       fhir:reference [ fhir:v "ServiceRequest/test04WalkOutsideActionStep" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
