@@ -1,0 +1,943 @@
+{
+  "resourceType": "Bundle",
+  "id": "pco-ig-test-data",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Goal",
+      "id": "test02GoalWithGAS",
+      "extension": [ {
+        "url": "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling",
+        "extension": [ {
+          "url": "level",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "gas-much-better-than-expected",
+            "display": "Much better than expected"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Walk dog outside three times a week"
+        } ]
+      }, {
+        "url": "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling",
+        "extension": [ {
+          "url": "level",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "gas-better-than-expected",
+            "display": "Better than expected"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Walk dog outside twice a week"
+        } ]
+      }, {
+        "url": "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling",
+        "extension": [ {
+          "url": "level",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "gas-expected-outcome",
+            "display": "Expected outcome"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Walk dog outside once a week"
+        } ]
+      }, {
+        "url": "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling",
+        "extension": [ {
+          "url": "level",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "gas-less-than-expected",
+            "display": "Less than expected"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Does not walk dog but goes outside with dog"
+        } ]
+      }, {
+        "url": "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling",
+        "extension": [ {
+          "url": "level",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "gas-much-less-than-expected",
+            "display": "Much less than expected"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Unable to go outside with dog"
+        } ]
+      } ],
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "code": "in-progress"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://mtnlotus.com/uv/pco/CodeSystem/ncqa-goal-domains",
+          "code": "physical-function",
+          "display": "Physical Function"
+        } ]
+      } ],
+      "description": {
+        "text": "Walk dog outside once a week"
+      },
+      "subject": {
+        "reference": "Patient/test02Patient"
+      },
+      "startDate": "2024-04-03",
+      "target": [ {
+        "dueDate": "2024-09-30"
+      } ],
+      "expressedBy": {
+        "reference": "Patient/test02Patient"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/test02GoalWithGAS"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Goal",
+      "id": "test01GoalPainLevelExample",
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "code": "in-progress"
+        } ]
+      },
+      "description": {
+        "text": "Maintain pain level below 5 while walking"
+      },
+      "subject": {
+        "reference": "Patient/test01Patient"
+      },
+      "startDate": "2024-02-15",
+      "target": [ {
+        "dueDate": "2024-06-30"
+      } ],
+      "expressedBy": {
+        "reference": "Practitioner/pcoPractitionerAnderson"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/test01GoalPainLevelExample"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "test03GASScoretBaseline",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "68489",
+          "display": "Goal attainment scale"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/test03Patient"
+      },
+      "focus": [ {
+        "reference": "Goal/test03GoalWithGAS"
+      } ],
+      "effectiveDateTime": "2024-04-03T10:15:00Z",
+      "performer": [ {
+        "reference": "Practitioner/pcoPractitionerGonzalez"
+      } ],
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "gas-less-than-expected",
+          "display": "Less than expected"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/test03GASScoretBaseline"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Goal",
+      "id": "test03GoalWithGAS",
+      "extension": [ {
+        "url": "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling",
+        "extension": [ {
+          "url": "level",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "gas-much-better-than-expected",
+            "display": "Much better than expected"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Walk dog outside three times a week"
+        } ]
+      }, {
+        "url": "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling",
+        "extension": [ {
+          "url": "level",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "gas-better-than-expected",
+            "display": "Better than expected"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Walk dog outside twice a week"
+        } ]
+      }, {
+        "url": "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling",
+        "extension": [ {
+          "url": "level",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "gas-expected-outcome",
+            "display": "Expected outcome"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Walk dog outside once a week"
+        } ]
+      }, {
+        "url": "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling",
+        "extension": [ {
+          "url": "level",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "gas-less-than-expected",
+            "display": "Less than expected"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Does not walk dog but goes outside with dog"
+        } ]
+      }, {
+        "url": "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling",
+        "extension": [ {
+          "url": "level",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "gas-much-less-than-expected",
+            "display": "Much less than expected"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Unable to go outside with dog"
+        } ]
+      } ],
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "code": "in-progress"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://mtnlotus.com/uv/pco/CodeSystem/ncqa-goal-domains",
+          "code": "physical-function",
+          "display": "Physical Function"
+        } ]
+      } ],
+      "description": {
+        "text": "Walk dog outside once a week"
+      },
+      "subject": {
+        "reference": "Patient/test03Patient"
+      },
+      "startDate": "2024-04-03",
+      "target": [ {
+        "dueDate": "2024-09-30"
+      } ],
+      "expressedBy": {
+        "reference": "Patient/test03Patient"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/test03GoalWithGAS"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "test03Patient",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://example.org",
+        "value": "ee8d4ac0-545c-4501-8d7e-646bfbda1db5"
+      } ],
+      "name": [ {
+        "family": "Lopez",
+        "given": [ "Camila" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1955-07-16"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/test03Patient"
+    }
+  }, {
+    "resource": {
+      "resourceType": "CarePlan",
+      "id": "test04CarePlan",
+      "status": "active",
+      "intent": "plan",
+      "category": [ {
+        "coding": [ {
+          "system": "http://mtnlotus.com/uv/pco/CodeSystem/ncqa-goal-domains",
+          "code": "physical-function",
+          "display": "Physical Function"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://mtnlotus.com/uv/pco/CodeSystem/ncqa-goal-domains",
+          "code": "independence",
+          "display": "Independence"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/test04Patient"
+      },
+      "period": {
+        "start": "2024-04-03",
+        "end": "2024-10-31"
+      },
+      "goal": [ {
+        "reference": "Goal/test04GoalWithGAS"
+      } ],
+      "activity": [ {
+        "reference": {
+          "reference": "ServiceRequest/test04WalkOutsideActionStep"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "CarePlan/test04CarePlan"
+    }
+  }, {
+    "resource": {
+      "resourceType": "CarePlan",
+      "id": "test03CarePlan",
+      "status": "active",
+      "intent": "plan",
+      "category": [ {
+        "coding": [ {
+          "system": "http://mtnlotus.com/uv/pco/CodeSystem/ncqa-goal-domains",
+          "code": "physical-function",
+          "display": "Physical Function"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://mtnlotus.com/uv/pco/CodeSystem/ncqa-goal-domains",
+          "code": "independence",
+          "display": "Independence"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/test03Patient"
+      },
+      "period": {
+        "start": "2024-04-03",
+        "end": "2024-10-31"
+      },
+      "goal": [ {
+        "reference": "Goal/test03GoalWithGAS"
+      } ],
+      "activity": [ {
+        "reference": {
+          "reference": "ServiceRequest/test03WalkOutsideActionStep"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "CarePlan/test03CarePlan"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "test04GASScorePatientFollowupExample",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "68491",
+          "display": "Patient follow-up goal attainment scaling score"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/test04Patient"
+      },
+      "focus": [ {
+        "reference": "Goal/test04GoalWithGAS"
+      } ],
+      "effectiveDateTime": "2024-05-10T10:15:00Z",
+      "performer": [ {
+        "reference": "Patient/test04Patient"
+      } ],
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "gas-less-than-expected",
+          "display": "Less than expected"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/test04GASScorePatientFollowupExample"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Goal",
+      "id": "test04GoalWithGAS",
+      "extension": [ {
+        "url": "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling",
+        "extension": [ {
+          "url": "level",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "gas-much-better-than-expected",
+            "display": "Much better than expected"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Walk dog outside three times a week"
+        } ]
+      }, {
+        "url": "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling",
+        "extension": [ {
+          "url": "level",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "gas-better-than-expected",
+            "display": "Better than expected"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Walk dog outside twice a week"
+        } ]
+      }, {
+        "url": "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling",
+        "extension": [ {
+          "url": "level",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "gas-expected-outcome",
+            "display": "Expected outcome"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Walk dog outside once a week"
+        } ]
+      }, {
+        "url": "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling",
+        "extension": [ {
+          "url": "level",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "gas-less-than-expected",
+            "display": "Less than expected"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Does not walk dog but goes outside with dog"
+        } ]
+      }, {
+        "url": "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling",
+        "extension": [ {
+          "url": "level",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "gas-much-less-than-expected",
+            "display": "Much less than expected"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Unable to go outside with dog"
+        } ]
+      } ],
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "code": "in-progress"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://mtnlotus.com/uv/pco/CodeSystem/ncqa-goal-domains",
+          "code": "physical-function",
+          "display": "Physical Function"
+        } ]
+      } ],
+      "description": {
+        "text": "Walk dog outside once a week"
+      },
+      "subject": {
+        "reference": "Patient/test04Patient"
+      },
+      "startDate": "2024-04-03",
+      "target": [ {
+        "dueDate": "2024-09-30"
+      } ],
+      "expressedBy": {
+        "reference": "Patient/test04Patient"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/test04GoalWithGAS"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "test01Patient",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://example.org",
+        "value": "ee8d4ac0-545c-4501-8d7e-646bfbda1db5"
+      } ],
+      "name": [ {
+        "family": "Lopez",
+        "given": [ "Camila" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1955-07-16"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/test01Patient"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "pcoPractitionerGonzalez",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://example.org",
+        "value": "ee8d4ac0-545c-4501-8d7e-646bfbda6cd7"
+      } ],
+      "name": [ {
+        "text": "Maria Gonzalez, NBC-HWC",
+        "family": "Gonzalez",
+        "given": [ "Maria" ],
+        "suffix": [ "NBC-HWC" ]
+      } ],
+      "gender": "female"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Practitioner/pcoPractitionerGonzalez"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "pcoPractitionerAnderson",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://example.org",
+        "value": "ee8d4ac0-545c-4501-8d7e-646bfbda6de8"
+      } ],
+      "name": [ {
+        "text": "John Anderson, MD",
+        "family": "Anderson",
+        "given": [ "John" ],
+        "suffix": [ "MD" ]
+      } ],
+      "gender": "male"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Practitioner/pcoPractitionerAnderson"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "test04Patient",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://example.org",
+        "value": "ee8d4ac0-545c-4501-8d7e-646bfbda1db5"
+      } ],
+      "name": [ {
+        "family": "Lopez",
+        "given": [ "Camila" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1955-07-16"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/test04Patient"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "test04GASScoretBaseline",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "68489",
+          "display": "Goal attainment scale"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/test04Patient"
+      },
+      "focus": [ {
+        "reference": "Goal/test04GoalWithGAS"
+      } ],
+      "effectiveDateTime": "2024-04-03T10:15:00Z",
+      "performer": [ {
+        "reference": "Practitioner/pcoPractitionerGonzalez"
+      } ],
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "gas-less-than-expected",
+          "display": "Less than expected"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/test04GASScoretBaseline"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ServiceRequest",
+      "id": "test04WalkOutsideActionStep",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
+        "valueReference": {
+          "reference": "Goal/test04GoalWithGAS"
+        }
+      } ],
+      "status": "active",
+      "intent": "plan",
+      "code": {
+        "text": "Walk outside without my dog"
+      },
+      "subject": {
+        "reference": "Patient/test04Patient"
+      },
+      "occurrenceTiming": {
+        "repeat": {
+          "boundsPeriod": {
+            "start": "2024-04-03",
+            "end": "2024-04-30"
+          },
+          "frequency": 2,
+          "periodUnit": "wk"
+        }
+      },
+      "authoredOn": "2024-04-03",
+      "requester": {
+        "reference": "Practitioner/pcoPractitionerGonzalez"
+      },
+      "performer": [ {
+        "reference": "Patient/test04Patient"
+      } ],
+      "patientInstruction": "Start with a short walk to the corner of your block to gain confidence in your walking."
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ServiceRequest/test04WalkOutsideActionStep"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ServiceRequest",
+      "id": "test03WalkOutsideActionStep",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
+        "valueReference": {
+          "reference": "Goal/test03GoalWithGAS"
+        }
+      } ],
+      "status": "active",
+      "intent": "plan",
+      "code": {
+        "text": "Walk outside without my dog"
+      },
+      "subject": {
+        "reference": "Patient/test03Patient"
+      },
+      "occurrenceTiming": {
+        "repeat": {
+          "boundsPeriod": {
+            "start": "2024-04-03",
+            "end": "2024-04-30"
+          },
+          "frequency": 2,
+          "periodUnit": "wk"
+        }
+      },
+      "authoredOn": "2024-04-03",
+      "requester": {
+        "reference": "Practitioner/pcoPractitionerGonzalez"
+      },
+      "performer": [ {
+        "reference": "Patient/test03Patient"
+      } ],
+      "patientInstruction": "Start with a short walk to the corner of your block to gain confidence in your walking."
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ServiceRequest/test03WalkOutsideActionStep"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "test02Patient",
+      "identifier": [ {
+        "use": "official",
+        "system": "http://example.org",
+        "value": "ee8d4ac0-545c-4501-8d7e-646bfbda1db5"
+      } ],
+      "name": [ {
+        "family": "Lopez",
+        "given": [ "Camila" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1955-07-16"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/test02Patient"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ImplementationGuide",
+      "id": "mtnlotus.fhir.pco-testing",
+      "url": "http://mtnlotus.com/fhir/pco-testing/ImplementationGuide/mtnlotus.fhir.pco-testing",
+      "version": "0.1.0",
+      "name": "MLW",
+      "title": "Person-Centered Outcomes Test Data",
+      "status": "draft",
+      "publisher": "Mountain Lotus WellBeing LLC",
+      "contact": [ {
+        "name": "Mountain Lotus WellBeing LLC",
+        "telecom": [ {
+          "system": "url",
+          "value": "http://mtnlotus.com"
+        } ]
+      } ],
+      "description": "Person-Centered Outcomes (PCO) FHIR IG test data",
+      "jurisdiction": [ {
+        "coding": [ {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        } ]
+      } ],
+      "packageId": "mtnlotus.fhir.pco-testing",
+      "license": "CC0-1.0",
+      "fhirVersion": [ "4.0.1" ],
+      "dependsOn": [ {
+        "id": "mtnlotus_fhir_uv_pco",
+        "uri": "http://mtnlotus.com/uv/pco/ImplementationGuide/mtnlotus.fhir.uv.pco",
+        "packageId": "mtnlotus.fhir.uv.pco",
+        "version": "dev"
+      }, {
+        "id": "hl7_fhir_us_core",
+        "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+        "packageId": "hl7.fhir.us.core",
+        "version": "6.1.0"
+      }, {
+        "id": "hl7_fhir_uv_cpg",
+        "uri": "http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg",
+        "packageId": "hl7.fhir.uv.cpg",
+        "version": "1.0.0"
+      }, {
+        "id": "fhir_cqf_common",
+        "uri": "http://fhir.org/guides/cqf/common/ImplementationGuide/fhir.cqf.common",
+        "packageId": "fhir.cqf.common",
+        "version": "4.0.1"
+      }, {
+        "id": "hl7_fhir_us_cqfmeasures",
+        "uri": "http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures",
+        "packageId": "hl7.fhir.us.cqfmeasures",
+        "version": "4.0.0"
+      } ],
+      "definition": {
+        "resource": [ {
+          "reference": {
+            "reference": "Practitioner/pcoPractitionerGonzalez"
+          },
+          "name": "Health & Wellness Coach",
+          "description": "Maria Gonzalez, NBC-HWC",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "Practitioner/pcoPractitionerAnderson"
+          },
+          "name": "Primary Care Physician",
+          "description": "John Anderson, MD",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "Patient/test01Patient"
+          },
+          "name": "Test 01",
+          "description": "Goal Identification: NO. Not a PCO Goal.",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "Goal/test01GoalPainLevelExample"
+          },
+          "name": "Test 01 Not a PCO goal",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "Patient/test02Patient"
+          },
+          "name": "Test 02",
+          "description": "Goal Identification: NO. Has a PCO GAS goal, but without a baseline score or care plan.",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "Goal/test02GoalWithGAS"
+          },
+          "name": "Test 02 PCO Goal with GAS",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "Patient/test03Patient"
+          },
+          "name": "Test 03",
+          "description": "Goal Identification: YES. Goal Follow-up: NO. Has a PCO GAS goal with both a baseline score and a care plan. No follow-up scores.",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "ServiceRequest/test03WalkOutsideActionStep"
+          },
+          "name": "Test 03 Care plan action step",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "CarePlan/test03CarePlan"
+          },
+          "name": "Test 03 Care Plan for GAS goal",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "Observation/test03GASScoretBaseline"
+          },
+          "name": "Test 03 GAS Baseline Score",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "Goal/test03GoalWithGAS"
+          },
+          "name": "Test 03 PCO Goal with GAS",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "Patient/test04Patient"
+          },
+          "name": "Test 04",
+          "description": "Goal Identification: YES. Goal Follow-up: YES. Goal Achievement: NO. Has a PCO GAS goal. Has follow-up score, but not achieved.",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "ServiceRequest/test04WalkOutsideActionStep"
+          },
+          "name": "Test 04 Care plan action step",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "CarePlan/test04CarePlan"
+          },
+          "name": "Test 04 Care Plan for GAS goal",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "Observation/test04GASScoretBaseline"
+          },
+          "name": "Test 04 GAS Baseline Score",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "Observation/test04GASScorePatientFollowupExample"
+          },
+          "name": "Test 04 Patient GAS Follow-up Score, not achieved.",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "Goal/test04GoalWithGAS"
+          },
+          "name": "Test 04 PCO Goal with GAS",
+          "exampleBoolean": true
+        } ],
+        "page": {
+          "nameUrl": "toc.html",
+          "title": "Table of Contents",
+          "generation": "html",
+          "page": [ {
+            "nameUrl": "index.html",
+            "title": "Home",
+            "generation": "markdown"
+          } ]
+        },
+        "parameter": [ {
+          "code": "copyrightyear",
+          "value": "2024+"
+        }, {
+          "code": "releaselabel",
+          "value": "ci-build"
+        }, {
+          "code": "path-liquid",
+          "value": "templates/liquid"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ImplementationGuide/mtnlotus.fhir.pco-testing"
+    }
+  } ]
+}

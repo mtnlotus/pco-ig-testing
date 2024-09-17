@@ -4,7 +4,7 @@ fsh-generated
 temp
 template
 output
-bundles/*/
+# bundles/*/
 input-cache
 
 # Don't commit this because it's so large #
@@ -31,8 +31,3 @@ Thumbs.db
 # backup files #
 ################
 *.bak
-
-# work-in-progress local dev work #
-################
-/input/cql_work-in-progress
-/input/vocabulary/ValueSet/internal
