@@ -6,14 +6,14 @@
   "status" : "draft",
   "package-id" : "mtnlotus.fhir.pco-testing",
   "ig-ver" : "0.1.0",
-  "date" : "Tue, 17 Sep, 2024 15:01:13 +0000",
-  "dateISO8601" : "2024-09-17T15:01:13+00:00",
-  "errs" : 20,
+  "date" : "Tue, 17 Sep, 2024 18:44:03 +0000",
+  "dateISO8601" : "2024-09-17T18:44:03+00:00",
+  "errs" : 36,
   "warnings" : 10,
   "hints" : 0,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1835668104
+  "maxMemory" : 1864549600
 }
