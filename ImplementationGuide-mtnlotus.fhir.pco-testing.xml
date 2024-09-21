@@ -11,7 +11,7 @@
   <name value="MLW"/>
   <title value="Person-Centered Outcomes Test Data"/>
   <status value="draft"/>
-  <date value="2024-09-17T18:44:03+00:00"/>
+  <date value="2024-09-21T00:48:06+00:00"/>
   <publisher value="Mountain Lotus WellBeing LLC"/>
   <contact>
     <name value="Mountain Lotus WellBeing LLC"/>
@@ -670,6 +670,140 @@
       </reference>
       <name value="Test 04 PCO Goal with GAS"/>
       <description value="Walk dog outside once a week"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/test05Patient"/>
+      </reference>
+      <name value="Test 05"/>
+      <description value="Goal Identification: YES. Goal Follow-up: NO. Goal Achievement: NO. Has a PCO GAS goal. Has follow-up score after 6 months."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/test05WalkOutsideActionStep"/>
+      </reference>
+      <name value="Test 05 Care plan action step"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/test05CarePlan"/>
+      </reference>
+      <name value="Test 05 Care Plan for GAS goal"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/test05GASScoretBaseline"/>
+      </reference>
+      <name value="Test 05 GAS Baseline Score"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/test05GASScorePatientFollowupExample"/>
+      </reference>
+      <name value="Test 05 Patient GAS Follow-up Score, not achieved."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/test05GoalWithGAS"/>
+      </reference>
+      <name value="Test 05 PCO Goal with GAS"/>
+      <description value="Walk dog outside once a week"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/test06Patient"/>
+      </reference>
+      <name value="Test 06"/>
+      <description value="Goal Identification: YES. Goal Follow-up: YES. Goal Achievement: YES. Has a PCO GAS goal. Has 2 follow-up scores, and goal is achieved."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/test06WalkOutsideActionStep"/>
+      </reference>
+      <name value="Test 06 Care plan action step"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/test06CarePlan"/>
+      </reference>
+      <name value="Test 06 Care Plan for GAS goal"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/test06GASScoretBaseline"/>
+      </reference>
+      <name value="Test 06 GAS Baseline Score"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/test06GASScorePatientFollowupExample"/>
+      </reference>
+      <name value="Test 06 Patient GAS Follow-up Score, not achieved."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/test06GoalWithGAS"/>
+      </reference>
+      <name value="Test 06 PCO Goal with GAS"/>
+      <description value="Walk dog outside once a week"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/test06GASScorePractitionerFollowupExample"/>
+      </reference>
+      <name value="Test 06 Practitioner GAS Follow-up Score, goal is achieved."/>
       <exampleBoolean value="true"/>
     </resource>
     <page>

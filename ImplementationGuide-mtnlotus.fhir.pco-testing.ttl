@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "MLW"] ; # 
   fhir:title [ fhir:v "Person-Centered Outcomes Test Data"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-09-17T18:44:03+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-21T00:48:06+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Mountain Lotus WellBeing LLC"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Mountain Lotus WellBeing LLC" ] ;
@@ -771,6 +771,153 @@
        ] ;
        fhir:name [ fhir:v "Test 04 PCO Goal with GAS" ] ;
        fhir:description [ fhir:v "Walk dog outside once a week" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mtnlotus.com/fhir/pco-testing/Patient/test05Patient> ;
+         fhir:reference [ fhir:v "Patient/test05Patient" ]
+       ] ;
+       fhir:name [ fhir:v "Test 05" ] ;
+       fhir:description [ fhir:v "Goal Identification: YES. Goal Follow-up: NO. Goal Achievement: NO. Has a PCO GAS goal. Has follow-up score after 6 months." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mtnlotus.com/fhir/pco-testing/ServiceRequest/test05WalkOutsideActionStep> ;
+         fhir:reference [ fhir:v "ServiceRequest/test05WalkOutsideActionStep" ]
+       ] ;
+       fhir:name [ fhir:v "Test 05 Care plan action step" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CarePlan" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mtnlotus.com/fhir/pco-testing/CarePlan/test05CarePlan> ;
+         fhir:reference [ fhir:v "CarePlan/test05CarePlan" ]
+       ] ;
+       fhir:name [ fhir:v "Test 05 Care Plan for GAS goal" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mtnlotus.com/fhir/pco-testing/Observation/test05GASScoretBaseline> ;
+         fhir:reference [ fhir:v "Observation/test05GASScoretBaseline" ]
+       ] ;
+       fhir:name [ fhir:v "Test 05 GAS Baseline Score" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mtnlotus.com/fhir/pco-testing/Observation/test05GASScorePatientFollowupExample> ;
+         fhir:reference [ fhir:v "Observation/test05GASScorePatientFollowupExample" ]
+       ] ;
+       fhir:name [ fhir:v "Test 05 Patient GAS Follow-up Score, not achieved." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Goal" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mtnlotus.com/fhir/pco-testing/Goal/test05GoalWithGAS> ;
+         fhir:reference [ fhir:v "Goal/test05GoalWithGAS" ]
+       ] ;
+       fhir:name [ fhir:v "Test 05 PCO Goal with GAS" ] ;
+       fhir:description [ fhir:v "Walk dog outside once a week" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mtnlotus.com/fhir/pco-testing/Patient/test06Patient> ;
+         fhir:reference [ fhir:v "Patient/test06Patient" ]
+       ] ;
+       fhir:name [ fhir:v "Test 06" ] ;
+       fhir:description [ fhir:v "Goal Identification: YES. Goal Follow-up: YES. Goal Achievement: YES. Has a PCO GAS goal. Has 2 follow-up scores, and goal is achieved." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mtnlotus.com/fhir/pco-testing/ServiceRequest/test06WalkOutsideActionStep> ;
+         fhir:reference [ fhir:v "ServiceRequest/test06WalkOutsideActionStep" ]
+       ] ;
+       fhir:name [ fhir:v "Test 06 Care plan action step" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CarePlan" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mtnlotus.com/fhir/pco-testing/CarePlan/test06CarePlan> ;
+         fhir:reference [ fhir:v "CarePlan/test06CarePlan" ]
+       ] ;
+       fhir:name [ fhir:v "Test 06 Care Plan for GAS goal" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mtnlotus.com/fhir/pco-testing/Observation/test06GASScoretBaseline> ;
+         fhir:reference [ fhir:v "Observation/test06GASScoretBaseline" ]
+       ] ;
+       fhir:name [ fhir:v "Test 06 GAS Baseline Score" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mtnlotus.com/fhir/pco-testing/Observation/test06GASScorePatientFollowupExample> ;
+         fhir:reference [ fhir:v "Observation/test06GASScorePatientFollowupExample" ]
+       ] ;
+       fhir:name [ fhir:v "Test 06 Patient GAS Follow-up Score, not achieved." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Goal" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mtnlotus.com/fhir/pco-testing/Goal/test06GoalWithGAS> ;
+         fhir:reference [ fhir:v "Goal/test06GoalWithGAS" ]
+       ] ;
+       fhir:name [ fhir:v "Test 06 PCO Goal with GAS" ] ;
+       fhir:description [ fhir:v "Walk dog outside once a week" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://mtnlotus.com/fhir/pco-testing/Observation/test06GASScorePractitionerFollowupExample> ;
+         fhir:reference [ fhir:v "Observation/test06GASScorePractitionerFollowupExample" ]
+       ] ;
+       fhir:name [ fhir:v "Test 06 Practitioner GAS Follow-up Score, goal is achieved." ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] ) ;
      fhir:page [

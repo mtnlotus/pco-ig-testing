@@ -1,28 +1,41 @@
 MLW : Validation Results
 =========================================
 
-err = 36, warn = 10, info = 0
-IG Publisher Version: 1.6.24 Out of date - current version is ?pub-ver-1?
-Generated Tue Sep 17 18:44:48 UTC 2024. FHIR version 4.0.1 for mtnlotus.fhir.pco-testing#0.1.0 (canonical = http://mtnlotus.com/fhir/pco-testing)
- Build Errors : 0 / 10 / 0
+err = 26, warn = 19, info = 0
+IG Publisher Version: 1.6.25
+Generated Sat Sep 21 00:49:00 UTC 2024. FHIR version 4.0.1 for mtnlotus.fhir.pco-testing#0.1.0 (canonical = http://mtnlotus.com/fhir/pco-testing)
+ Build Errors : 0 / 19 / 0
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test03CarePlan : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test04CarePlan : 0 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test05CarePlan : 0 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test06CarePlan : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test01GoalPainLevelExample : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test02GoalWithGAS : 10 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test03GoalWithGAS : 10 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test04GoalWithGAS : 10 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test03GoalWithGAS : 0 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test04GoalWithGAS : 0 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test05GoalWithGAS : 0 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test06GoalWithGAS : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/ImplementationGuide-mtnlotus.fhir.pco-testing : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test03GASScoretBaseline : 2 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test04GASScorePatientFollowupExample : 2 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test04GASScoretBaseline : 2 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test05GASScorePatientFollowupExample : 2 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test05GASScoretBaseline : 2 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test06GASScorePatientFollowupExample : 2 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test06GASScorePractitionerFollowupExample : 2 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test06GASScoretBaseline : 2 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Patient-test01Patient : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Patient-test02Patient : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Patient-test03Patient : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Patient-test04Patient : 0 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Patient-test05Patient : 0 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Patient-test06Patient : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Practitioner-pcoPractitionerAnderson : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Practitioner-pcoPractitionerGonzalez : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/ServiceRequest-test03WalkOutsideActionStep : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/ServiceRequest-test04WalkOutsideActionStep : 0 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/ServiceRequest-test05WalkOutsideActionStep : 0 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/ServiceRequest-test06WalkOutsideActionStep : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/test03CarePlan.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -32,11 +45,22 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/test04WalkOutsideActionStep.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test04GASScoretBaseline.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test04GASScorePatientFollowupExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/test05CarePlan.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/test05WalkOutsideActionStep.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test05GASScoretBaseline.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test05GASScorePatientFollowupExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/test06CarePlan.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/test06WalkOutsideActionStep.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test06GASScoretBaseline.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test06GASScorePatientFollowupExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test06GASScorePractitionerFollowupExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CarePlan-test03CarePlan.json ==
 == fsh-generated/resources/CarePlan-test04CarePlan.json ==
+== fsh-generated/resources/CarePlan-test05CarePlan.json ==
+== fsh-generated/resources/CarePlan-test06CarePlan.json ==
 == fsh-generated/resources/Goal-test01GoalPainLevelExample.json ==
 == fsh-generated/resources/Goal-test02GoalWithGAS.json ==
 ERROR: Goal/test02GoalWithGAS: Goal.extension[0].extension[0].value.ofType(Coding).code: Unknown code 'gas-much-better-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
@@ -50,27 +74,9 @@ ERROR: Goal/test02GoalWithGAS: Goal.extension[3].extension[0].value.ofType(Codin
 ERROR: Goal/test02GoalWithGAS: Goal.extension[4].extension[0].value.ofType(Coding).code: Unknown code 'gas-much-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
 ERROR: Goal/test02GoalWithGAS: Goal.extension[4].extension[0].value.ofType(Coding): The code provided (http://loinc.org#gas-much-less-than-expected) was not found in the value set 'Follow-Up GAS Score Answers' (http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0), and a code from this value set is required: The provided code 'http://loinc.org#gas-much-less-than-expected ('Much less than expected')' was not found in the value set 'http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0'; Unknown code 'gas-much-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
 == fsh-generated/resources/Goal-test03GoalWithGAS.json ==
-ERROR: Goal/test03GoalWithGAS: Goal.extension[0].extension[0].value.ofType(Coding).code: Unknown code 'gas-much-better-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test03GoalWithGAS: Goal.extension[0].extension[0].value.ofType(Coding): The code provided (http://loinc.org#gas-much-better-than-expected) was not found in the value set 'Follow-Up GAS Score Answers' (http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0), and a code from this value set is required: The provided code 'http://loinc.org#gas-much-better-than-expected ('Much better than expected')' was not found in the value set 'http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0'; Unknown code 'gas-much-better-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test03GoalWithGAS: Goal.extension[1].extension[0].value.ofType(Coding).code: Unknown code 'gas-better-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test03GoalWithGAS: Goal.extension[1].extension[0].value.ofType(Coding): The code provided (http://loinc.org#gas-better-than-expected) was not found in the value set 'Follow-Up GAS Score Answers' (http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0), and a code from this value set is required: The provided code 'http://loinc.org#gas-better-than-expected ('Better than expected')' was not found in the value set 'http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0'; Unknown code 'gas-better-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test03GoalWithGAS: Goal.extension[2].extension[0].value.ofType(Coding).code: Unknown code 'gas-expected-outcome' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test03GoalWithGAS: Goal.extension[2].extension[0].value.ofType(Coding): The code provided (http://loinc.org#gas-expected-outcome) was not found in the value set 'Follow-Up GAS Score Answers' (http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0), and a code from this value set is required: The provided code 'http://loinc.org#gas-expected-outcome ('Expected outcome')' was not found in the value set 'http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0'; Unknown code 'gas-expected-outcome' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test03GoalWithGAS: Goal.extension[3].extension[0].value.ofType(Coding).code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test03GoalWithGAS: Goal.extension[3].extension[0].value.ofType(Coding): The code provided (http://loinc.org#gas-less-than-expected) was not found in the value set 'Follow-Up GAS Score Answers' (http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0), and a code from this value set is required: The provided code 'http://loinc.org#gas-less-than-expected ('Less than expected')' was not found in the value set 'http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0'; Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test03GoalWithGAS: Goal.extension[4].extension[0].value.ofType(Coding).code: Unknown code 'gas-much-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test03GoalWithGAS: Goal.extension[4].extension[0].value.ofType(Coding): The code provided (http://loinc.org#gas-much-less-than-expected) was not found in the value set 'Follow-Up GAS Score Answers' (http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0), and a code from this value set is required: The provided code 'http://loinc.org#gas-much-less-than-expected ('Much less than expected')' was not found in the value set 'http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0'; Unknown code 'gas-much-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
 == fsh-generated/resources/Goal-test04GoalWithGAS.json ==
-ERROR: Goal/test04GoalWithGAS: Goal.extension[0].extension[0].value.ofType(Coding).code: Unknown code 'gas-much-better-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test04GoalWithGAS: Goal.extension[0].extension[0].value.ofType(Coding): The code provided (http://loinc.org#gas-much-better-than-expected) was not found in the value set 'Follow-Up GAS Score Answers' (http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0), and a code from this value set is required: The provided code 'http://loinc.org#gas-much-better-than-expected ('Much better than expected')' was not found in the value set 'http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0'; Unknown code 'gas-much-better-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test04GoalWithGAS: Goal.extension[1].extension[0].value.ofType(Coding).code: Unknown code 'gas-better-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test04GoalWithGAS: Goal.extension[1].extension[0].value.ofType(Coding): The code provided (http://loinc.org#gas-better-than-expected) was not found in the value set 'Follow-Up GAS Score Answers' (http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0), and a code from this value set is required: The provided code 'http://loinc.org#gas-better-than-expected ('Better than expected')' was not found in the value set 'http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0'; Unknown code 'gas-better-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test04GoalWithGAS: Goal.extension[2].extension[0].value.ofType(Coding).code: Unknown code 'gas-expected-outcome' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test04GoalWithGAS: Goal.extension[2].extension[0].value.ofType(Coding): The code provided (http://loinc.org#gas-expected-outcome) was not found in the value set 'Follow-Up GAS Score Answers' (http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0), and a code from this value set is required: The provided code 'http://loinc.org#gas-expected-outcome ('Expected outcome')' was not found in the value set 'http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0'; Unknown code 'gas-expected-outcome' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test04GoalWithGAS: Goal.extension[3].extension[0].value.ofType(Coding).code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test04GoalWithGAS: Goal.extension[3].extension[0].value.ofType(Coding): The code provided (http://loinc.org#gas-less-than-expected) was not found in the value set 'Follow-Up GAS Score Answers' (http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0), and a code from this value set is required: The provided code 'http://loinc.org#gas-less-than-expected ('Less than expected')' was not found in the value set 'http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0'; Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test04GoalWithGAS: Goal.extension[4].extension[0].value.ofType(Coding).code: Unknown code 'gas-much-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Goal/test04GoalWithGAS: Goal.extension[4].extension[0].value.ofType(Coding): The code provided (http://loinc.org#gas-much-less-than-expected) was not found in the value set 'Follow-Up GAS Score Answers' (http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0), and a code from this value set is required: The provided code 'http://loinc.org#gas-much-less-than-expected ('Much less than expected')' was not found in the value set 'http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0'; Unknown code 'gas-much-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
+== fsh-generated/resources/Goal-test05GoalWithGAS.json ==
+== fsh-generated/resources/Goal-test06GoalWithGAS.json ==
 == fsh-generated/resources/ImplementationGuide-mtnlotus.fhir.pco-testing.json ==
 == fsh-generated/resources/Observation-test03GASScoretBaseline.json ==
 ERROR: Observation/test03GASScoretBaseline: Observation.code.coding[0].code: Unknown code '68489' in the CodeSystem 'http://loinc.org' version '2.78'
@@ -81,11 +87,30 @@ ERROR: Observation/test04GASScorePatientFollowupExample: Observation.value.ofTyp
 == fsh-generated/resources/Observation-test04GASScoretBaseline.json ==
 ERROR: Observation/test04GASScoretBaseline: Observation.code.coding[0].code: Unknown code '68489' in the CodeSystem 'http://loinc.org' version '2.78'
 ERROR: Observation/test04GASScoretBaseline: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
+== fsh-generated/resources/Observation-test05GASScorePatientFollowupExample.json ==
+ERROR: Observation/test05GASScorePatientFollowupExample: Observation.code.coding[0].code: Unknown code '68491' in the CodeSystem 'http://loinc.org' version '2.78'
+ERROR: Observation/test05GASScorePatientFollowupExample: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-better-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
+== fsh-generated/resources/Observation-test05GASScoretBaseline.json ==
+ERROR: Observation/test05GASScoretBaseline: Observation.code.coding[0].code: Unknown code '68489' in the CodeSystem 'http://loinc.org' version '2.78'
+ERROR: Observation/test05GASScoretBaseline: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
+== fsh-generated/resources/Observation-test06GASScorePatientFollowupExample.json ==
+ERROR: Observation/test06GASScorePatientFollowupExample: Observation.code.coding[0].code: Unknown code '68491' in the CodeSystem 'http://loinc.org' version '2.78'
+ERROR: Observation/test06GASScorePatientFollowupExample: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
+== fsh-generated/resources/Observation-test06GASScorePractitionerFollowupExample.json ==
+ERROR: Observation/test06GASScorePractitionerFollowupExample: Observation.code.coding[0].code: Unknown code '68490' in the CodeSystem 'http://loinc.org' version '2.78'
+ERROR: Observation/test06GASScorePractitionerFollowupExample: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-expected-outcome' in the CodeSystem 'http://loinc.org' version '2.78'
+== fsh-generated/resources/Observation-test06GASScoretBaseline.json ==
+ERROR: Observation/test06GASScoretBaseline: Observation.code.coding[0].code: Unknown code '68489' in the CodeSystem 'http://loinc.org' version '2.78'
+ERROR: Observation/test06GASScoretBaseline: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
 == fsh-generated/resources/Patient-test01Patient.json ==
 == fsh-generated/resources/Patient-test02Patient.json ==
 == fsh-generated/resources/Patient-test03Patient.json ==
 == fsh-generated/resources/Patient-test04Patient.json ==
+== fsh-generated/resources/Patient-test05Patient.json ==
+== fsh-generated/resources/Patient-test06Patient.json ==
 == fsh-generated/resources/Practitioner-pcoPractitionerAnderson.json ==
 == fsh-generated/resources/Practitioner-pcoPractitionerGonzalez.json ==
 == fsh-generated/resources/ServiceRequest-test03WalkOutsideActionStep.json ==
 == fsh-generated/resources/ServiceRequest-test04WalkOutsideActionStep.json ==
+== fsh-generated/resources/ServiceRequest-test05WalkOutsideActionStep.json ==
+== fsh-generated/resources/ServiceRequest-test06WalkOutsideActionStep.json ==

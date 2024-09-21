@@ -10,7 +10,7 @@
   "name" : "MLW",
   "title" : "Person-Centered Outcomes Test Data",
   "status" : "draft",
-  "date" : "2024-09-17T18:44:03+00:00",
+  "date" : "2024-09-21T00:48:06+00:00",
   "publisher" : "Mountain Lotus WellBeing LLC",
   "contact" : [{
     "name" : "Mountain Lotus WellBeing LLC",
@@ -852,6 +852,153 @@
       },
       "name" : "Test 04 PCO Goal with GAS",
       "description" : "Walk dog outside once a week",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/test05Patient"
+      },
+      "name" : "Test 05",
+      "description" : "Goal Identification: YES. Goal Follow-up: NO. Goal Achievement: NO. Has a PCO GAS goal. Has follow-up score after 6 months.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/test05WalkOutsideActionStep"
+      },
+      "name" : "Test 05 Care plan action step",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/test05CarePlan"
+      },
+      "name" : "Test 05 Care Plan for GAS goal",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/test05GASScoretBaseline"
+      },
+      "name" : "Test 05 GAS Baseline Score",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/test05GASScorePatientFollowupExample"
+      },
+      "name" : "Test 05 Patient GAS Follow-up Score, not achieved.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/test05GoalWithGAS"
+      },
+      "name" : "Test 05 PCO Goal with GAS",
+      "description" : "Walk dog outside once a week",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/test06Patient"
+      },
+      "name" : "Test 06",
+      "description" : "Goal Identification: YES. Goal Follow-up: YES. Goal Achievement: YES. Has a PCO GAS goal. Has 2 follow-up scores, and goal is achieved.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/test06WalkOutsideActionStep"
+      },
+      "name" : "Test 06 Care plan action step",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/test06CarePlan"
+      },
+      "name" : "Test 06 Care Plan for GAS goal",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/test06GASScoretBaseline"
+      },
+      "name" : "Test 06 GAS Baseline Score",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/test06GASScorePatientFollowupExample"
+      },
+      "name" : "Test 06 Patient GAS Follow-up Score, not achieved.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/test06GoalWithGAS"
+      },
+      "name" : "Test 06 PCO Goal with GAS",
+      "description" : "Walk dog outside once a week",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/test06GASScorePractitionerFollowupExample"
+      },
+      "name" : "Test 06 Practitioner GAS Follow-up Score, goal is achieved.",
       "exampleBoolean" : true
     }],
     "page" : {
