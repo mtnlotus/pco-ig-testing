@@ -53,7 +53,7 @@
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://loinc.org",
-          "code": "gas-better-than-expected",
+          "code": "LA6112-2",
           "display": "Better than expected"
         } ]
       }
@@ -108,7 +108,7 @@
           "url": "level",
           "valueCoding": {
             "system": "http://loinc.org",
-            "code": "gas-much-better-than-expected",
+            "code": "LA6113-0",
             "display": "Much better than expected"
           }
         }, {
@@ -121,7 +121,7 @@
           "url": "level",
           "valueCoding": {
             "system": "http://loinc.org",
-            "code": "gas-better-than-expected",
+            "code": "LA6112-2",
             "display": "Better than expected"
           }
         }, {
@@ -134,7 +134,7 @@
           "url": "level",
           "valueCoding": {
             "system": "http://loinc.org",
-            "code": "gas-expected-outcome",
+            "code": "LA6111-4",
             "display": "Expected outcome"
           }
         }, {
@@ -377,7 +377,7 @@
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://loinc.org",
-          "code": "gas-expected-outcome",
+          "code": "LA6111-4",
           "display": "Expected outcome"
         } ]
       }

@@ -80,5 +80,5 @@ Usage: #example
 * effectiveDateTime = "2024-09-20T10:15:00Z"
 * code = $LNC#68491 "Patient follow-up goal attainment scaling score"
 * focus = Reference(test05GoalWithGAS)
-* valueCodeableConcept = $LNC#gas-better-than-expected "Better than expected"
+* valueCodeableConcept = $LNC#LA6112-2 "Better than expected"
 
