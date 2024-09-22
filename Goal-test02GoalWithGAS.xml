@@ -3,13 +3,13 @@
 <Goal xmlns="http://hl7.org/fhir">
   <id value="test02GoalWithGAS"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Goal test02GoalWithGAS</b></p><a name="test02GoalWithGAS"> </a><a name="hctest02GoalWithGAS"> </a><a name="test02GoalWithGAS-en-US"> </a><blockquote><p><b>Goal Attainment Scaling</b></p><ul><li>level: <a href="https://loinc.org/gas-much-better-than-expected">Logical Observation Identifiers, Names and Codes (LOINC)</a> gas-much-better-than-expected: Much better than expected</li><li>text: Walk dog outside three times a week</li></ul></blockquote><blockquote><p><b>Goal Attainment Scaling</b></p><ul><li>level: <a href="https://loinc.org/gas-better-than-expected">Logical Observation Identifiers, Names and Codes (LOINC)</a> gas-better-than-expected: Better than expected</li><li>text: Walk dog outside twice a week</li></ul></blockquote><blockquote><p><b>Goal Attainment Scaling</b></p><ul><li>level: <a href="https://loinc.org/gas-expected-outcome">Logical Observation Identifiers, Names and Codes (LOINC)</a> gas-expected-outcome: Expected outcome</li><li>text: Walk dog outside once a week</li></ul></blockquote><blockquote><p><b>Goal Attainment Scaling</b></p><ul><li>level: <a href="https://loinc.org/gas-less-than-expected">Logical Observation Identifiers, Names and Codes (LOINC)</a> gas-less-than-expected: Less than expected</li><li>text: Does not walk dog but goes outside with dog</li></ul></blockquote><blockquote><p><b>Goal Attainment Scaling</b></p><ul><li>level: <a href="https://loinc.org/gas-much-less-than-expected">Logical Observation Identifiers, Names and Codes (LOINC)</a> gas-much-less-than-expected: Much less than expected</li><li>text: Unable to go outside with dog</li></ul></blockquote><p><b>lifecycleStatus</b>: Active</p><p><b>achievementStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/goal-achievement in-progress}">In Progress</span></p><p><b>category</b>: <span title="Codes:{http://mtnlotus.com/uv/pco/CodeSystem/ncqa-goal-domains physical-function}">Physical Function</span></p><p><b>description</b>: <span title="Codes:">Walk dog outside once a week</span></p><p><b>subject</b>: <a href="Patient-test02Patient.html">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>start</b>: 2024-04-03</p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Due[x]</b></td></tr><tr><td style="display: none">*</td><td>2024-09-30</td></tr></table><p><b>expressedBy</b>: <a href="Patient-test02Patient.html">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Goal test02GoalWithGAS</b></p><a name="test02GoalWithGAS"> </a><a name="hctest02GoalWithGAS"> </a><a name="test02GoalWithGAS-en-US"> </a><blockquote><p><b>Goal Attainment Scaling</b></p><ul><li>level: <a href="https://loinc.org/LA6113-0">Logical Observation Identifiers, Names and Codes (LOINC)</a> LA6113-0: Much better than expected</li><li>text: Walk dog outside three times a week</li></ul></blockquote><blockquote><p><b>Goal Attainment Scaling</b></p><ul><li>level: <a href="https://loinc.org/LA6112-2">Logical Observation Identifiers, Names and Codes (LOINC)</a> LA6112-2: Better than expected</li><li>text: Walk dog outside twice a week</li></ul></blockquote><blockquote><p><b>Goal Attainment Scaling</b></p><ul><li>level: <a href="https://loinc.org/LA6111-4">Logical Observation Identifiers, Names and Codes (LOINC)</a> LA6111-4: Expected outcome</li><li>text: Walk dog outside once a week</li></ul></blockquote><blockquote><p><b>Goal Attainment Scaling</b></p><ul><li>level: <a href="https://loinc.org/gas-less-than-expected">Logical Observation Identifiers, Names and Codes (LOINC)</a> gas-less-than-expected: Less than expected</li><li>text: Does not walk dog but goes outside with dog</li></ul></blockquote><blockquote><p><b>Goal Attainment Scaling</b></p><ul><li>level: <a href="https://loinc.org/gas-much-less-than-expected">Logical Observation Identifiers, Names and Codes (LOINC)</a> gas-much-less-than-expected: Much less than expected</li><li>text: Unable to go outside with dog</li></ul></blockquote><p><b>lifecycleStatus</b>: Active</p><p><b>achievementStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/goal-achievement in-progress}">In Progress</span></p><p><b>category</b>: <span title="Codes:{http://mtnlotus.com/uv/pco/CodeSystem/ncqa-goal-domains physical-function}">Physical Function</span></p><p><b>description</b>: <span title="Codes:">Walk dog outside once a week</span></p><p><b>subject</b>: <a href="Patient-test02Patient.html">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>start</b>: 2024-04-03</p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Due[x]</b></td></tr><tr><td style="display: none">*</td><td>2024-09-30</td></tr></table><p><b>expressedBy</b>: <a href="Patient-test02Patient.html">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p></div>
   </text>
   <extension url="http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling">
     <extension url="level">
       <valueCoding>
         <system value="http://loinc.org"/>
-        <code value="gas-much-better-than-expected"/>
+        <code value="LA6113-0"/>
         <display value="Much better than expected"/>
       </valueCoding>
     </extension>
@@ -21,7 +21,7 @@
     <extension url="level">
       <valueCoding>
         <system value="http://loinc.org"/>
-        <code value="gas-better-than-expected"/>
+        <code value="LA6112-2"/>
         <display value="Better than expected"/>
       </valueCoding>
     </extension>
@@ -33,7 +33,7 @@
     <extension url="level">
       <valueCoding>
         <system value="http://loinc.org"/>
-        <code value="gas-expected-outcome"/>
+        <code value="LA6111-4"/>
         <display value="Expected outcome"/>
       </valueCoding>
     </extension>
