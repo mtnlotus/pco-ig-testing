@@ -5,6 +5,7 @@ temp
 template
 output
 # bundles/*/
+bundles-app-data
 input-cache
 
 # Don't commit this because it's so large #
