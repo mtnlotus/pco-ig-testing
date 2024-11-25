@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="current" defaultWorkgroup="pc" url="http://hl7.org/fhir/us/pco-testing">
+<version code="current" url=""/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Practitioner/pcoPractitionerGonzalez" key="Practitioner-pcoPractitionerGonzalez" name="Health &amp; Wellness Coach"/>
+<artifact id="Practitioner/pcoPractitionerAnderson" key="Practitioner-pcoPractitionerAnderson" name="Primary Care Physician"/>
+<artifact id="Patient/test01Patient" key="Patient-test01Patient" name="Test 01"/>
+<artifact id="Goal/test01GoalPainLevelExample" key="Goal-test01GoalPainLevelExample" name="Test 01 Not a PCO goal"/>
+<artifact id="Patient/test02Patient" key="Patient-test02Patient" name="Test 02"/>
+<artifact id="Goal/test02GoalWithGAS" key="Goal-test02GoalWithGAS" name="Test 02 PCO Goal with GAS"/>
+<artifact id="Patient/test03Patient" key="Patient-test03Patient" name="Test 03"/>
+<artifact id="CarePlan/test03CarePlan" key="CarePlan-test03CarePlan" name="Test 03 Care Plan for GAS goal"/>
+<artifact id="ServiceRequest/test03WalkOutsideActionStep" key="ServiceRequest-test03WalkOutsideActionStep" name="Test 03 Care plan action step"/>
+<artifact id="Observation/test03GASScoretBaseline" key="Observation-test03GASScoretBaseline" name="Test 03 GAS Baseline Score"/>
+<artifact id="Goal/test03GoalWithGAS" key="Goal-test03GoalWithGAS" name="Test 03 PCO Goal with GAS"/>
+<artifact id="Patient/test04Patient" key="Patient-test04Patient" name="Test 04"/>
+<artifact id="CarePlan/test04CarePlan" key="CarePlan-test04CarePlan" name="Test 04 Care Plan for GAS goal"/>
+<artifact id="ServiceRequest/test04WalkOutsideActionStep" key="ServiceRequest-test04WalkOutsideActionStep" name="Test 04 Care plan action step"/>
+<artifact id="Observation/test04GASScoretBaseline" key="Observation-test04GASScoretBaseline" name="Test 04 GAS Baseline Score"/>
+<artifact id="Goal/test04GoalWithGAS" key="Goal-test04GoalWithGAS" name="Test 04 PCO Goal with GAS"/>
+<artifact id="Observation/test04GASScorePatientFollowupExample" key="Observation-test04GASScorePatientFollowupExample" name="Test 04 Patient GAS Follow-up Score, not achieved."/>
+<artifact id="Patient/test05Patient" key="Patient-test05Patient" name="Test 05"/>
+<artifact id="CarePlan/test05CarePlan" key="CarePlan-test05CarePlan" name="Test 05 Care Plan for GAS goal"/>
+<artifact id="ServiceRequest/test05WalkOutsideActionStep" key="ServiceRequest-test05WalkOutsideActionStep" name="Test 05 Care plan action step"/>
+<artifact id="Observation/test05GASScoretBaseline" key="Observation-test05GASScoretBaseline" name="Test 05 GAS Baseline Score"/>
+<artifact id="Goal/test05GoalWithGAS" key="Goal-test05GoalWithGAS" name="Test 05 PCO Goal with GAS"/>
+<artifact id="Observation/test05GASScorePatientFollowupExample" key="Observation-test05GASScorePatientFollowupExample" name="Test 05 Patient GAS Follow-up Score, not achieved."/>
+<artifact id="Patient/test06Patient" key="Patient-test06Patient" name="Test 06"/>
+<artifact id="CarePlan/test06CarePlan" key="CarePlan-test06CarePlan" name="Test 06 Care Plan for GAS goal"/>
+<artifact id="ServiceRequest/test06WalkOutsideActionStep" key="ServiceRequest-test06WalkOutsideActionStep" name="Test 06 Care plan action step"/>
+<artifact id="Observation/test06GASScoretBaseline" key="Observation-test06GASScoretBaseline" name="Test 06 GAS Baseline Score"/>
+<artifact id="Goal/test06GoalWithGAS" key="Goal-test06GoalWithGAS" name="Test 06 PCO Goal with GAS"/>
+<artifact id="Observation/test06GASScorePatientFollowupExample" key="Observation-test06GASScorePatientFollowupExample" name="Test 06 Patient GAS Follow-up Score, not achieved."/>
+<artifact id="Observation/test06GASScorePractitionerFollowupExample" key="Observation-test06GASScorePractitionerFollowupExample" name="Test 06 Practitioner GAS Follow-up Score, goal is achieved."/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="index" name="Home"/>
+<page key="toc" name="Table of Contents"/>
+</specification>

@@ -3,9 +3,9 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: mtnlotus.fhir.pco-testing
-canonical: http://mtnlotus.com/fhir/pco-testing
-name: MLW
+id: hl7.fhir.us.pco-testing
+canonical: http://hl7.org/fhir/us/pco-testing
+name: PCOTesting
 title: Person-Centered Outcomes Test Data
 description: Person-Centered Outcomes (PCO) FHIR IG test data
 status: draft # draft | active | retired | unknown
@@ -15,13 +15,14 @@ FSHOnly: false
 copyrightYear: 2024+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+jurisdiction: urn:iso:std:iso:3166#US
 publisher:
-  name: Mountain Lotus WellBeing LLC
-  url: http://mtnlotus.com
+  name: HL7 International / Patient Care
+  url: http://www.hl7.org/Special/committees/patientcare
+  email: patientcare@lists.HL7.org
 #
 dependencies:
-  mtnlotus.fhir.uv.pco: dev
+  hl7.fhir.us.pco: dev
   hl7.fhir.us.core: 6.1.0
   hl7.fhir.uv.cpg: 1.0.0
   fhir.cqf.common: 4.0.1
