@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://mtnlotus.com/fhir/pco-testing/Goal/test01GoalPainLevelExample> a fhir:Goal ;
+<http://hl7.org/fhir/us/pco-testing/Goal/test01GoalPainLevelExample> a fhir:Goal ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "test01GoalPainLevelExample"] ; # 
   fhir:text [
@@ -23,7 +23,7 @@
      fhir:text [ fhir:v "Maintain pain level below 5 while walking" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://mtnlotus.com/fhir/pco-testing/Patient/test01Patient> ;
+     fhir:link <http://hl7.org/fhir/us/pco-testing/Patient/test01Patient> ;
      fhir:reference [ fhir:v "Patient/test01Patient" ]
   ] ; # 
   fhir:start [ fhir:v "2024-02-15"^^xsd:date] ; # 
@@ -31,9 +31,13 @@
      fhir:due [ fhir:v "2024-06-30"^^xsd:date ]
   ] ) ; # 
   fhir:expressedBy [
-     fhir:link <http://mtnlotus.com/fhir/pco-testing/Practitioner/pcoPractitionerAnderson> ;
+     fhir:link <http://hl7.org/fhir/us/pco-testing/Practitioner/pcoPractitionerAnderson> ;
      fhir:reference [ fhir:v "Practitioner/pcoPractitionerAnderson" ]
   ] . # 
+
+<http://hl7.org/fhir/us/pco-testing/Patient/test01Patient> a fhir:us .
+
+<http://hl7.org/fhir/us/pco-testing/Practitioner/pcoPractitionerAnderson> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

@@ -1,7 +1,7 @@
 {
   "version" : "0.1.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20241022175911",
-  "name" : "mtnlotus.fhir.pco-testing",
-  "jurisdiction" : "http://unstats.un.org/unsd/methods/m49/m49.htm#001"
+  "date" : "20241126050802",
+  "name" : "hl7.fhir.us.pco-testing",
+  "jurisdiction" : "urn:iso:std:iso:3166#US"
 }

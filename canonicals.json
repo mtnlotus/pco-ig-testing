@@ -1,9 +1,9 @@
 [
   {
-    "id" : "mtnlotus.fhir.pco-testing",
+    "id" : "hl7.fhir.us.pco-testing",
     "type" : "ImplementationGuide",
-    "url" : "http://mtnlotus.com/fhir/pco-testing/ImplementationGuide/mtnlotus.fhir.pco-testing",
+    "url" : "http://hl7.org/fhir/us/pco-testing/ImplementationGuide/hl7.fhir.us.pco-testing",
     "version" : "0.1.0",
-    "name" : "MLW"
+    "name" : "PCOTesting"
   }
 ]

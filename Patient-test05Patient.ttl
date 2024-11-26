@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://mtnlotus.com/fhir/pco-testing/Patient/test05Patient> a fhir:Patient ;
+<http://hl7.org/fhir/us/pco-testing/Patient/test05Patient> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "test05Patient"] ; # 
   fhir:text [

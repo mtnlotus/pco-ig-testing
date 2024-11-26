@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://mtnlotus.com/fhir/pco-testing/ServiceRequest/test05WalkOutsideActionStep> a fhir:ServiceRequest ;
+<http://hl7.org/fhir/us/pco-testing/ServiceRequest/test05WalkOutsideActionStep> a fhir:ServiceRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "test05WalkOutsideActionStep"] ; # 
   fhir:text [
@@ -16,7 +16,7 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <http://mtnlotus.com/fhir/pco-testing/Goal/test05GoalWithGAS> ;
+       fhir:link <http://hl7.org/fhir/us/pco-testing/Goal/test05GoalWithGAS> ;
        fhir:reference [ fhir:v "Goal/test05GoalWithGAS" ]
      ]
   ] ) ; # 
@@ -26,7 +26,7 @@
      fhir:text [ fhir:v "Walk outside without my dog" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://mtnlotus.com/fhir/pco-testing/Patient/test05Patient> ;
+     fhir:link <http://hl7.org/fhir/us/pco-testing/Patient/test05Patient> ;
      fhir:reference [ fhir:v "Patient/test05Patient" ]
   ] ; # 
   fhir:occurrence [
@@ -43,14 +43,20 @@
   ] ; # 
   fhir:authoredOn [ fhir:v "2024-04-03"^^xsd:date] ; # 
   fhir:requester [
-     fhir:link <http://mtnlotus.com/fhir/pco-testing/Practitioner/pcoPractitionerGonzalez> ;
+     fhir:link <http://hl7.org/fhir/us/pco-testing/Practitioner/pcoPractitionerGonzalez> ;
      fhir:reference [ fhir:v "Practitioner/pcoPractitionerGonzalez" ]
   ] ; # 
   fhir:performer ( [
-     fhir:link <http://mtnlotus.com/fhir/pco-testing/Patient/test05Patient> ;
+     fhir:link <http://hl7.org/fhir/us/pco-testing/Patient/test05Patient> ;
      fhir:reference [ fhir:v "Patient/test05Patient" ]
   ] ) ; # 
   fhir:patientInstruction [ fhir:v "Start with a short walk to the corner of your block to gain confidence in your walking."] . # 
+
+<http://hl7.org/fhir/us/pco-testing/Goal/test05GoalWithGAS> a fhir:us .
+
+<http://hl7.org/fhir/us/pco-testing/Patient/test05Patient> a fhir:us .
+
+<http://hl7.org/fhir/us/pco-testing/Practitioner/pcoPractitionerGonzalez> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

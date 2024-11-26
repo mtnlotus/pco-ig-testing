@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://mtnlotus.com/fhir/pco-testing/Practitioner/pcoPractitionerAnderson> a fhir:Practitioner ;
+<http://hl7.org/fhir/us/pco-testing/Practitioner/pcoPractitionerAnderson> a fhir:Practitioner ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "pcoPractitionerAnderson"] ; # 
   fhir:text [

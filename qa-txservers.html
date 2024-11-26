@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>MLW : Terminology Server Report</title>
+  <title>PCOTesting : Terminology Server Report</title>
   <link href="fhir.css" rel="stylesheet"/>
   <style>
     span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
@@ -10,8 +10,8 @@
   </style>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
- <h1>Terminology Server Report for MLW</h1>
- <p>Generated Tue Oct 22 18:01:51 UTC 2024, FHIR version 4.0.1 for mtnlotus.fhir.pco-testing#0.1.0 (canonical = <a href="http://mtnlotus.com/fhir/pco-testing">http://mtnlotus.com/fhir/pco-testing</a> (<a href="http://mtnlotus.com/fhir/pco-testing/history.html">history</a>))</p>
+ <h1>Terminology Server Report for PCOTesting</h1>
+ <p>Generated Tue Nov 26 05:10:37 UTC 2024, FHIR version 4.0.1 for hl7.fhir.us.pco-testing#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/pco-testing">http://hl7.org/fhir/us/pco-testing</a> (<a href="http://hl7.org/fhir/us/pco-testing/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -40,6 +40,20 @@
     </td>
   </tr>
   <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://hl7.org/fhir/fhir-types</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://hl7.org/fhir/fhir-types</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
@@ -56,7 +70,7 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0</td>
+    <td>http://hl7.org/fhir/us/pco/ValueSet/gas-score-answers|0.2.0</td>
     <td>http://loinc.org</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
   </tr>
@@ -70,7 +84,7 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0</td>
+    <td>http://hl7.org/fhir/us/pco/ValueSet/gas-score-answers|0.2.0</td>
     <td>http://loinc.org</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
   </tr>
@@ -84,7 +98,7 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0</td>
+    <td>http://hl7.org/fhir/us/pco/ValueSet/gas-score-answers|0.2.0</td>
     <td>http://loinc.org</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
   </tr>
@@ -98,7 +112,7 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0</td>
+    <td>http://hl7.org/fhir/us/pco/ValueSet/gas-score-answers|0.2.0</td>
     <td>http://loinc.org</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
   </tr>
@@ -112,7 +126,7 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>http://mtnlotus.com/uv/pco/ValueSet/gas-score-answers|0.1.0</td>
+    <td>http://hl7.org/fhir/us/pco/ValueSet/gas-score-answers|0.2.0</td>
     <td>http://loinc.org</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
   </tr>
@@ -172,10 +186,38 @@
     <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
     <td>[auth = , candidates=http://tx.fhir.org/r4, auth = , candidates=http://tx.fhir.org/r4, auth = , candidates=http://tx.fhir.org/r4]</td>
   </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166:-2</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4</td>
+  </tr>
 </table>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
 <a href="http://tx.fhir.org/r4"></a>
-<p>Use Count: 19. Code Systems used: </p>
+<p>Use Count: 24. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -190,6 +232,12 @@
     <th>
       <b>Details</b>
     </th>
+  </tr>
+  <tr>
+    <td>http://hl7.org/fhir/fhir-types</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
   </tr>
   <tr>
     <td>http://loinc.org</td>
@@ -215,7 +263,7 @@
   </tr>
   <tr>
     <td>urn:iso:std:iso:3166</td>
-    <td>0</td>
+    <td>3</td>
     <td>2</td>
     <td>
       <a href="http://terminology.hl7.org/5.2.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
@@ -223,7 +271,7 @@
   </tr>
   <tr>
     <td>urn:iso:std:iso:3166:-2</td>
-    <td>0</td>
+    <td>1</td>
     <td>2</td>
     <td>
       <a href="http://terminology.hl7.org/5.2.0/CodeSystem-ISO3166Part2.html">ISO 3166 Part 2 Country Subdivision Codes</a>

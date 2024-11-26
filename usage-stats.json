@@ -1,8 +1,8 @@
 {
-  "package": "mtnlotus.fhir.pco-testing",
+  "package": "hl7.fhir.us.pco-testing",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
-  "jurisdiction": "001",
+  "jurisdiction": "US",
   "extensions": [],
   "profiles": {},
   "usage": {
@@ -25,7 +25,7 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://mtnlotus.com/uv/pco/StructureDefinition/pco-goal-attainment-scaling": [
+    "http://hl7.org/fhir/us/pco/StructureDefinition/pco-goal-attainment-scaling": [
       "Goal"
     ]
   }
