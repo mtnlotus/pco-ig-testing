@@ -3,25 +3,11 @@
   "id" : "test05CarePlan",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan test05CarePlan</b></p><a name=\"test05CarePlan\"> </a><a name=\"hctest05CarePlan\"> </a><a name=\"test05CarePlan-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title=\"Codes:{http://hl7.org/fhir/us/pco/CodeSystem/ncqa-goal-domains physical-function}\">Physical Function</span>, <span title=\"Codes:{http://hl7.org/fhir/us/pco/CodeSystem/ncqa-goal-domains independence}\">Independence</span>, <span title=\"Codes:{http://hl7.org/fhir/us/core/CodeSystem/careplan-category assess-plan}\">Assessment and Plan of Treatment</span></p><p><b>subject</b>: <a href=\"Patient-test05Patient.html\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>period</b>: 2024-04-03 --&gt; 2024-10-31</p><p><b>goal</b>: <a href=\"Goal-test05GoalWithGAS.html\">Goal: lifecycleStatus = active; achievementStatus = In Progress; category = Physical Function; description = ; start[x] = 2024-02-03</a></p><h3>Activities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"ServiceRequest-test05WalkOutsideActionStep.html\">ServiceRequest </a></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan test05CarePlan</b></p><a name=\"test05CarePlan\"> </a><a name=\"hctest05CarePlan\"> </a><a name=\"test05CarePlan-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title=\"Codes:{http://hl7.org/fhir/us/core/CodeSystem/careplan-category assess-plan}\">Assessment and Plan of Treatment</span></p><p><b>subject</b>: <a href=\"Patient-test05Patient.html\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>period</b>: 2024-04-03 --&gt; 2024-10-31</p><p><b>goal</b>: <a href=\"Goal-test05GoalWithGAS.html\">Goal: lifecycleStatus = active; achievementStatus = In Progress; category = Physical Function; description = ; start[x] = 2024-02-03</a></p><h3>Activities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"ServiceRequest-test05WalkOutsideActionStep.html\">ServiceRequest </a></td></tr></table></div>"
   },
   "status" : "active",
   "intent" : "plan",
   "category" : [{
-    "coding" : [{
-      "system" : "http://hl7.org/fhir/us/pco/CodeSystem/ncqa-goal-domains",
-      "code" : "physical-function",
-      "display" : "Physical Function"
-    }]
-  },
-  {
-    "coding" : [{
-      "system" : "http://hl7.org/fhir/us/pco/CodeSystem/ncqa-goal-domains",
-      "code" : "independence",
-      "display" : "Independence"
-    }]
-  },
-  {
     "coding" : [{
       "system" : "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
       "code" : "assess-plan"

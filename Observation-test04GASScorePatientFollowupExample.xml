@@ -10,6 +10,7 @@
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
       <code value="survey"/>
+      <display value="Survey"/>
     </coding>
   </category>
   <code>

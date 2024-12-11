@@ -17,7 +17,8 @@
   fhir:category ( [
      fhir:coding ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "survey" ]
+       fhir:code [ fhir:v "survey" ] ;
+       fhir:display [ fhir:v "Survey" ]
      ] )
   ] ) ; # 
   fhir:code [

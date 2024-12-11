@@ -2,8 +2,8 @@ PCOTesting : Validation Results
 =========================================
 
 err = 25, warn = 19, info = 0
-IG Publisher Version: 1.7.5
-Generated Tue Nov 26 05:10:37 UTC 2024. FHIR version 4.0.1 for hl7.fhir.us.pco-testing#0.1.0 (canonical = http://hl7.org/fhir/us/pco-testing)
+IG Publisher Version: 1.8.1
+Generated Wed Dec 11 00:25:33 UTC 2024. FHIR version 4.0.1 for hl7.fhir.us.pco-testing#0.1.0 (canonical = http://hl7.org/fhir/us/pco-testing)
  Build Errors : 1 / 19 / 0
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test03CarePlan : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test04CarePlan : 0 / 0 / 1
@@ -56,7 +56,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test06GASScorePractitionerFollowupExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: There is no jira specification file defined with the expected name of FHIR-us-pco-testing in the xml folder of the  https://github.com/HL7/Jira-Spec-Artifacts project.  This must exist before ballot or publication.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
-WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CarePlan-test03CarePlan.json ==
 == fsh-generated/resources/CarePlan-test04CarePlan.json ==
