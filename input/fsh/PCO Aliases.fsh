@@ -3,5 +3,7 @@ Alias: $LNC = http://loinc.org
 Alias: $rxNorm = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias: $UCUM = http://unitsofmeasure.org
 
+Alias: OBSCAT = http://terminology.hl7.org/CodeSystem/observation-category
+
 Alias: $GoalAchievement = http://terminology.hl7.org/CodeSystem/goal-achievement
 Alias: $pertainsToGoal = http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal

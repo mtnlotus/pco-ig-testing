@@ -18,7 +18,7 @@ Title: "Test 06 PCO Goal with GAS"
 Usage: #example
 * lifecycleStatus = #active
 * achievementStatus = $GoalAchievement#in-progress
-* category[pcoCategory] = NCQAGoalDomains#physical-function "Physical Function"
+* category[domainCategory] = PCOGoalDomains#physical-function "Physical Function"
 * subject = Reference(test06Patient)
 * expressedBy = Reference(test06Patient)
 * startDate = "2024-04-03"
@@ -31,6 +31,7 @@ InstanceOf: PCOGoalAttainmentScoreObservation
 Title: "Test 06 GAS Baseline Score"
 Usage: #example
 * status = #final 
+* category[survey] = OBSCAT#survey "Survey"
 * subject = Reference(test06Patient)
 * performer = Reference(pcoPractitionerGonzalez)
 * effectiveDateTime = "2024-04-03T10:15:00Z"
@@ -45,8 +46,6 @@ Usage: #example
 * status = #active
 * intent = #plan
 * subject = Reference(test06Patient)
-* category[pcoCategory][0] = NCQAGoalDomains#physical-function "Physical Function"
-* category[pcoCategory][1] = NCQAGoalDomains#independence "Independence"
 * goal = Reference(test06GoalWithGAS)
 * activity[0].reference = Reference(test06WalkOutsideActionStep)
 * period.start = "2024-04-03"
@@ -75,6 +74,7 @@ InstanceOf: PCOGoalAttainmentScoreObservation
 Title: "Test 06 Patient GAS Follow-up Score, not achieved."
 Usage: #example
 * status = #final 
+* category[survey] = OBSCAT#survey "Survey"
 * subject = Reference(test06Patient)
 * performer = Reference(test06Patient)
 * effectiveDateTime = "2024-05-10T10:15:00Z"
@@ -87,6 +87,7 @@ InstanceOf: PCOGoalAttainmentScoreObservation
 Title: "Test 06 Practitioner GAS Follow-up Score, goal is achieved."
 Usage: #example
 * status = #final 
+* category[survey] = OBSCAT#survey "Survey"
 * subject = Reference(test06Patient)
 * performer = Reference(pcoPractitionerGonzalez)
 * effectiveDateTime = "2024-07-16T10:15:00Z"

@@ -18,7 +18,7 @@ Title: "Test 02 PCO Goal with GAS"
 Usage: #example
 * lifecycleStatus = #active
 * achievementStatus = $GoalAchievement#in-progress
-* category[pcoCategory] = NCQAGoalDomains#physical-function "Physical Function"
+* category[domainCategory] = PCOGoalDomains#physical-function "Physical Function"
 * subject = Reference(test02Patient)
 * expressedBy = Reference(test02Patient)
 * startDate = "2024-04-03"
