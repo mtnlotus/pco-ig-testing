@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "test01GoalPainLevelExample"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Goal test01GoalPainLevelExample</b></p><a name=\"test01GoalPainLevelExample\"> </a><a name=\"hctest01GoalPainLevelExample\"> </a><a name=\"test01GoalPainLevelExample-en-US\"> </a><p><b>lifecycleStatus</b>: Active</p><p><b>achievementStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/goal-achievement in-progress}\">In Progress</span></p><p><b>description</b>: <span title=\"Codes:\">Maintain pain level below 5 while walking</span></p><p><b>subject</b>: <a href=\"Patient-test01Patient.html\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>start</b>: 2024-02-15</p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Due[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-06-30</td></tr></table><p><b>expressedBy</b>: <a href=\"Practitioner-pcoPractitionerAnderson.html\">Practitioner John Anderson, MD</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Goal test01GoalPainLevelExample</b></p><a name=\"test01GoalPainLevelExample\"> </a><a name=\"hctest01GoalPainLevelExample\"> </a><a name=\"test01GoalPainLevelExample-en-US\"> </a><p><b>lifecycleStatus</b>: Active</p><p><b>achievementStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/goal-achievement in-progress}\">In Progress</span></p><p><b>category</b>: <span title=\"Codes:{http://hl7.org/fhir/us/pco/CodeSystem/pco-codes person-centered-goal}\">Person-Centered Goal</span></p><p><b>description</b>: <span title=\"Codes:\">Maintain pain level below 5 while walking</span></p><p><b>subject</b>: <a href=\"Patient-test01Patient.html\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>start</b>: 2024-02-15</p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Due[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-06-30</td></tr></table><p><b>expressedBy</b>: <a href=\"Practitioner-pcoPractitionerAnderson.html\">Practitioner John Anderson, MD</a></p></div>"
   ] ; # 
   fhir:lifecycleStatus [ fhir:v "active"] ; # 
   fhir:achievementStatus [
@@ -19,6 +19,12 @@
        fhir:code [ fhir:v "in-progress" ]
      ] )
   ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/pco/CodeSystem/pco-codes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "person-centered-goal" ]
+     ] )
+  ] ) ; # 
   fhir:description [
      fhir:text [ fhir:v "Maintain pain level below 5 while walking" ]
   ] ; # 

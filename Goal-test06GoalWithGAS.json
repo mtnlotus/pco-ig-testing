@@ -3,7 +3,7 @@
   "id" : "test06GoalWithGAS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Goal test06GoalWithGAS</b></p><a name=\"test06GoalWithGAS\"> </a><a name=\"hctest06GoalWithGAS\"> </a><a name=\"test06GoalWithGAS-en-US\"> </a><p><b>lifecycleStatus</b>: Active</p><p><b>achievementStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/goal-achievement in-progress}\">In Progress</span></p><p><b>category</b>: <span title=\"Codes:{http://hl7.org/fhir/us/pco/CodeSystem/pco-goal-domains physical-function}\">Physical Function</span></p><p><b>description</b>: <span title=\"Codes:\">Walk dog outside once a week</span></p><p><b>subject</b>: <a href=\"Patient-test06Patient.html\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>start</b>: 2024-04-03</p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Due[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-09-30</td></tr></table><p><b>expressedBy</b>: <a href=\"Patient-test06Patient.html\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5\u00a0(use:\u00a0official,\u00a0))</a></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Goal test06GoalWithGAS</b></p><a name=\"test06GoalWithGAS\"> </a><a name=\"hctest06GoalWithGAS\"> </a><a name=\"test06GoalWithGAS-en-US\"> </a><p><b>lifecycleStatus</b>: Active</p><p><b>achievementStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/goal-achievement in-progress}\">In Progress</span></p><p><b>category</b>: <span title=\"Codes:{http://hl7.org/fhir/us/pco/CodeSystem/pco-goal-domains physical-function}\">Physical Function</span>, <span title=\"Codes:{http://hl7.org/fhir/us/pco/CodeSystem/pco-codes person-centered-goal}\">Person-Centered Goal</span></p><p><b>description</b>: <span title=\"Codes:\">Walk dog outside once a week</span></p><p><b>subject</b>: <a href=\"Patient-test06Patient.html\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>start</b>: 2024-04-03</p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Due[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2024-09-30</td></tr></table><p><b>expressedBy</b>: <a href=\"Patient-test06Patient.html\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5\u00a0(use:\u00a0official,\u00a0))</a></p></div>"
   },
   "lifecycleStatus" : "active",
   "achievementStatus" : {
@@ -17,6 +17,12 @@
       "system" : "http://hl7.org/fhir/us/pco/CodeSystem/pco-goal-domains",
       "code" : "physical-function",
       "display" : "Physical Function"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/us/pco/CodeSystem/pco-codes",
+      "code" : "person-centered-goal"
     }]
   }],
   "description" : {

@@ -11,14 +11,13 @@
   fhir:id [ fhir:v "test06GASScoretBaseline"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation test06GASScoretBaseline</b></p><a name=\"test06GASScoretBaseline\"> </a><a name=\"hctest06GASScoretBaseline\"> </a><a name=\"test06GASScoretBaseline-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 68489}\">Goal attainment scale</span></p><p><b>subject</b>: <a href=\"Patient-test06Patient.html\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>focus</b>: <a href=\"Goal-test06GoalWithGAS.html\">Goal: lifecycleStatus = active; achievementStatus = In Progress; category = Physical Function; description = ; start[x] = 2024-04-03</a></p><p><b>effective</b>: 2024-04-03 10:15:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-pcoPractitionerGonzalez.html\">Practitioner Maria Gonzalez, NBC-HWC</a></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org gas-less-than-expected}\">Less than expected</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation test06GASScoretBaseline</b></p><a name=\"test06GASScoretBaseline\"> </a><a name=\"hctest06GASScoretBaseline\"> </a><a name=\"test06GASScoretBaseline-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 68489}\">Goal attainment scale</span></p><p><b>subject</b>: <a href=\"Patient-test06Patient.html\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>focus</b>: <a href=\"Goal-test06GoalWithGAS.html\">Goal: lifecycleStatus = active; achievementStatus = In Progress; category = Physical Function,Person-Centered Goal; description = ; start[x] = 2024-04-03</a></p><p><b>effective</b>: 2024-04-03 10:15:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-pcoPractitionerGonzalez.html\">Practitioner Maria Gonzalez, NBC-HWC</a></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org gas-less-than-expected}\">Less than expected</span></p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "survey" ] ;
-       fhir:display [ fhir:v "Survey" ]
+       fhir:code [ fhir:v "survey" ]
      ] )
   ] ) ; # 
   fhir:code [
