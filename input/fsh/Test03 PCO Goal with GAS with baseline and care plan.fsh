@@ -18,7 +18,7 @@ Title: "Test 03 PCO Goal with GAS"
 Usage: #example
 * lifecycleStatus = #active
 * achievementStatus = $GoalAchievement#in-progress
-* category[domainCategory] = PCOGoalDomains#physical-function "Physical Function"
+* category[goal-domain] = PCOGoalDomains#physical-function "Physical Function"
 * subject = Reference(test03Patient)
 * expressedBy = Reference(test03Patient)
 * startDate = "2024-04-03"
@@ -31,7 +31,6 @@ InstanceOf: PCOGoalAttainmentScoreObservation
 Title: "Test 03 GAS Baseline Score"
 Usage: #example
 * status = #final 
-* category[survey] = OBSCAT#survey "Survey"
 * subject = Reference(test03Patient)
 * performer = Reference(pcoPractitionerGonzalez)
 * effectiveDateTime = "2024-04-03T10:15:00Z"
