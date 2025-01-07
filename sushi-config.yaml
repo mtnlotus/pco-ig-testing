@@ -23,6 +23,11 @@ publisher:
 #
 dependencies:
   hl7.fhir.us.pco: dev
+  hl7.fhir.us.pacio-pfe: current
+  hl7.fhir.us.pacio-adi: current
+  hl7.fhir.us.sdoh-clinicalcare: current
+  hl7.fhir.us.mcc: current
+  hl7.fhir.us.eltss: current
   hl7.fhir.us.core: 6.1.0
   hl7.fhir.uv.cpg: 1.0.0
   fhir.cqf.common: 4.0.1
@@ -212,7 +217,7 @@ instanceOptions:
   # Determines for which types of Instances SUSHI will automatically set meta.profile
   # if InstanceOf references a profile:
   #
-  setMetaProfile: never # always | never | inline-only | standalone-only
+  setMetaProfile: always # always | never | inline-only | standalone-only
   #
   #
   # Determines for which types of Instances SUSHI will automatically set id

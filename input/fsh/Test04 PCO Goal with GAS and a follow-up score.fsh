@@ -26,7 +26,7 @@ Usage: #example
 * description.text = "Walk dog outside once a week"
 // exclude optional GAS extensions
 
-Instance: test04GASScoretBaseline
+Instance: test04GASScoreBaseline
 InstanceOf: PCOGoalAttainmentScoreObservation
 Title: "Test 04 GAS Baseline Score"
 Usage: #example

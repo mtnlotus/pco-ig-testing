@@ -6,6 +6,9 @@
     "resource": {
       "resourceType": "Patient",
       "id": "test05Patient",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" ]
+      },
       "identifier": [ {
         "use": "official",
         "system": "http://example.org",
@@ -26,6 +29,9 @@
     "resource": {
       "resourceType": "Observation",
       "id": "test05GASScorePatientFollowupExample",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-score-observation" ]
+      },
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -54,7 +60,7 @@
         "coding": [ {
           "system": "http://loinc.org",
           "code": "LA6112-2",
-          "display": "Better than expected"
+          "display": "1"
         } ]
       }
     },
@@ -66,6 +72,9 @@
     "resource": {
       "resourceType": "Goal",
       "id": "test05GoalWithGAS",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-goal-profile" ]
+      },
       "lifecycleStatus": "active",
       "achievementStatus": {
         "coding": [ {
@@ -78,11 +87,6 @@
           "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-goal-domains",
           "code": "physical-function",
           "display": "Physical Function"
-        } ]
-      }, {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-codes",
-          "code": "person-centered-goal"
         } ]
       } ],
       "description": {
@@ -107,6 +111,9 @@
     "resource": {
       "resourceType": "Goal",
       "id": "test02GoalWithGAS",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-goal-profile" ]
+      },
       "extension": [ {
         "url": "http://hl7.org/fhir/us/pco/StructureDefinition/pco-goal-attainment-scaling",
         "extension": [ {
@@ -114,7 +121,7 @@
           "valueCoding": {
             "system": "http://loinc.org",
             "code": "LA6113-0",
-            "display": "Much better than expected"
+            "display": "2 or more"
           }
         }, {
           "url": "text",
@@ -127,7 +134,7 @@
           "valueCoding": {
             "system": "http://loinc.org",
             "code": "LA6112-2",
-            "display": "Better than expected"
+            "display": "1"
           }
         }, {
           "url": "text",
@@ -140,7 +147,7 @@
           "valueCoding": {
             "system": "http://loinc.org",
             "code": "LA6111-4",
-            "display": "Expected outcome"
+            "display": "0"
           }
         }, {
           "url": "text",
@@ -186,11 +193,6 @@
           "code": "physical-function",
           "display": "Physical Function"
         } ]
-      }, {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-codes",
-          "code": "person-centered-goal"
-        } ]
       } ],
       "description": {
         "text": "Walk dog outside once a week"
@@ -214,6 +216,9 @@
     "resource": {
       "resourceType": "ServiceRequest",
       "id": "test05WalkOutsideActionStep",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest" ]
+      },
       "extension": [ {
         "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
         "valueReference": {
@@ -255,6 +260,9 @@
     "resource": {
       "resourceType": "Goal",
       "id": "test01GoalPainLevelExample",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-goal-profile" ]
+      },
       "lifecycleStatus": "active",
       "achievementStatus": {
         "coding": [ {
@@ -262,12 +270,6 @@
           "code": "in-progress"
         } ]
       },
-      "category": [ {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-codes",
-          "code": "person-centered-goal"
-        } ]
-      } ],
       "description": {
         "text": "Maintain pain level below 5 while walking"
       },
@@ -322,6 +324,31 @@
         "packageId": "hl7.fhir.us.pco",
         "version": "dev"
       }, {
+        "id": "hl7_fhir_us_pacio_pfe",
+        "uri": "http://hl7.org/fhir/us/pacio-pfe/ImplementationGuide/hl7.fhir.us.pacio-pfe",
+        "packageId": "hl7.fhir.us.pacio-pfe",
+        "version": "current"
+      }, {
+        "id": "hl7_fhir_us_pacio_adi",
+        "uri": "http://hl7.org/fhir/us/pacio-adi/ImplementationGuide/hl7.fhir.us.pacio-adi",
+        "packageId": "hl7.fhir.us.pacio-adi",
+        "version": "current"
+      }, {
+        "id": "hl7_fhir_us_sdoh_clinicalcare",
+        "uri": "http://hl7.org/fhir/us/sdoh-clinicalcare/ImplementationGuide/hl7.fhir.us.sdoh-clinicalcare",
+        "packageId": "hl7.fhir.us.sdoh-clinicalcare",
+        "version": "current"
+      }, {
+        "id": "hl7_fhir_us_mcc",
+        "uri": "http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7.fhir.us.mcc",
+        "packageId": "hl7.fhir.us.mcc",
+        "version": "current"
+      }, {
+        "id": "hl7_fhir_us_eltss",
+        "uri": "http://hl7.org/fhir/us/eltss/ImplementationGuide/hl7.fhir.us.eltss",
+        "packageId": "hl7.fhir.us.eltss",
+        "version": "current"
+      }, {
         "id": "hl7_fhir_us_core",
         "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
         "packageId": "hl7.fhir.us.core",
@@ -349,6 +376,13 @@
           },
           "name": "Health & Wellness Coach",
           "description": "Maria Gonzalez, NBC-HWC",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "Goal/goal-PCO-eLTSS"
+          },
+          "name": "PCO Goal with eLTSS elements",
+          "description": "Nothing added for eLTSS Goal",
           "exampleBoolean": true
         }, {
           "reference": {
@@ -404,7 +438,7 @@
           "exampleBoolean": true
         }, {
           "reference": {
-            "reference": "Observation/test03GASScoretBaseline"
+            "reference": "Observation/test03GASScoreBaseline"
           },
           "name": "Test 03 GAS Baseline Score",
           "exampleBoolean": true
@@ -435,7 +469,7 @@
           "exampleBoolean": true
         }, {
           "reference": {
-            "reference": "Observation/test04GASScoretBaseline"
+            "reference": "Observation/test04GASScoreBaseline"
           },
           "name": "Test 04 GAS Baseline Score",
           "exampleBoolean": true
@@ -472,7 +506,7 @@
           "exampleBoolean": true
         }, {
           "reference": {
-            "reference": "Observation/test05GASScoretBaseline"
+            "reference": "Observation/test05GASScoreBaseline"
           },
           "name": "Test 05 GAS Baseline Score",
           "exampleBoolean": true
@@ -509,7 +543,7 @@
           "exampleBoolean": true
         }, {
           "reference": {
-            "reference": "Observation/test06GASScoretBaseline"
+            "reference": "Observation/test06GASScoreBaseline"
           },
           "name": "Test 06 GAS Baseline Score",
           "exampleBoolean": true
@@ -527,9 +561,28 @@
           "exampleBoolean": true
         }, {
           "reference": {
+            "reference": "Goal/goal-PCO-SDOH"
+          },
+          "name": "Test 06 PCO Goal with GAS",
+          "exampleBoolean": true
+        }, {
+          "reference": {
             "reference": "Observation/test06GASScorePractitionerFollowupExample"
           },
           "name": "Test 06 Practitioner GAS Follow-up Score, goal is achieved.",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "Patient/pcoGoalPatient"
+          },
+          "name": "Test Goals Patient",
+          "exampleBoolean": true
+        }, {
+          "reference": {
+            "reference": "Observation/pcoWhatMattersStatementExample"
+          },
+          "name": "What Matters Statement: Family & Friends",
+          "description": "What Matters observation added by a Patient to record a free-text statement about a well-being focus area.",
           "exampleBoolean": true
         } ],
         "page": {
@@ -563,8 +616,93 @@
     }
   }, {
     "resource": {
+      "resourceType": "Goal",
+      "id": "test03GoalWithGAS",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-goal-profile" ]
+      },
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "code": "in-progress"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-goal-domains",
+          "code": "physical-function",
+          "display": "Physical Function"
+        } ]
+      } ],
+      "description": {
+        "text": "Walk dog outside once a week"
+      },
+      "subject": {
+        "reference": "Patient/test03Patient"
+      },
+      "startDate": "2024-04-03",
+      "target": [ {
+        "dueDate": "2024-09-30"
+      } ],
+      "expressedBy": {
+        "reference": "Patient/test03Patient"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/test03GoalWithGAS"
+    }
+  }, {
+    "resource": {
       "resourceType": "Observation",
-      "id": "test03GASScoretBaseline",
+      "id": "test06GASScoreBaseline",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-score-observation" ]
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "68489",
+          "display": "Goal attainment scale"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/test06Patient"
+      },
+      "focus": [ {
+        "reference": "Goal/test06GoalWithGAS"
+      } ],
+      "effectiveDateTime": "2024-04-03T10:15:00Z",
+      "performer": [ {
+        "reference": "Practitioner/pcoPractitionerGonzalez"
+      } ],
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "gas-less-than-expected",
+          "display": "Less than expected"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/test06GASScoreBaseline"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "test03GASScoreBaseline",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-score-observation" ]
+      },
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -599,53 +737,15 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/test03GASScoretBaseline"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Goal",
-      "id": "test03GoalWithGAS",
-      "lifecycleStatus": "active",
-      "achievementStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
-          "code": "in-progress"
-        } ]
-      },
-      "category": [ {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-goal-domains",
-          "code": "physical-function",
-          "display": "Physical Function"
-        } ]
-      }, {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-codes",
-          "code": "person-centered-goal"
-        } ]
-      } ],
-      "description": {
-        "text": "Walk dog outside once a week"
-      },
-      "subject": {
-        "reference": "Patient/test03Patient"
-      },
-      "startDate": "2024-04-03",
-      "target": [ {
-        "dueDate": "2024-09-30"
-      } ],
-      "expressedBy": {
-        "reference": "Patient/test03Patient"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Goal/test03GoalWithGAS"
+      "url": "Observation/test03GASScoreBaseline"
     }
   }, {
     "resource": {
       "resourceType": "Observation",
       "id": "test06GASScorePractitionerFollowupExample",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-score-observation" ]
+      },
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -674,7 +774,7 @@
         "coding": [ {
           "system": "http://loinc.org",
           "code": "LA6111-4",
-          "display": "Expected outcome"
+          "display": "0"
         } ]
       }
     },
@@ -686,6 +786,9 @@
     "resource": {
       "resourceType": "Patient",
       "id": "test03Patient",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" ]
+      },
       "identifier": [ {
         "use": "official",
         "system": "http://example.org",
@@ -706,6 +809,9 @@
     "resource": {
       "resourceType": "CarePlan",
       "id": "test04CarePlan",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-care-plan" ]
+      },
       "status": "active",
       "intent": "plan",
       "category": [ {
@@ -736,48 +842,11 @@
     }
   }, {
     "resource": {
-      "resourceType": "Observation",
-      "id": "test05GASScoretBaseline",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "68489",
-          "display": "Goal attainment scale"
-        } ]
-      },
-      "subject": {
-        "reference": "Patient/test05Patient"
-      },
-      "focus": [ {
-        "reference": "Goal/test05GoalWithGAS"
-      } ],
-      "effectiveDateTime": "2024-02-03T10:15:00Z",
-      "performer": [ {
-        "reference": "Practitioner/pcoPractitionerGonzalez"
-      } ],
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "gas-less-than-expected",
-          "display": "Less than expected"
-        } ]
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/test05GASScoretBaseline"
-    }
-  }, {
-    "resource": {
       "resourceType": "CarePlan",
       "id": "test03CarePlan",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-care-plan" ]
+      },
       "status": "active",
       "intent": "plan",
       "category": [ {
@@ -810,6 +879,9 @@
     "resource": {
       "resourceType": "Observation",
       "id": "test04GASScorePatientFollowupExample",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-score-observation" ]
+      },
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -850,6 +922,9 @@
     "resource": {
       "resourceType": "Patient",
       "id": "test06Patient",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" ]
+      },
       "identifier": [ {
         "use": "official",
         "system": "http://example.org",
@@ -870,6 +945,9 @@
     "resource": {
       "resourceType": "Goal",
       "id": "test04GoalWithGAS",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-goal-profile" ]
+      },
       "lifecycleStatus": "active",
       "achievementStatus": {
         "coding": [ {
@@ -882,11 +960,6 @@
           "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-goal-domains",
           "code": "physical-function",
           "display": "Physical Function"
-        } ]
-      }, {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-codes",
-          "code": "person-centered-goal"
         } ]
       } ],
       "description": {
@@ -911,6 +984,9 @@
     "resource": {
       "resourceType": "CarePlan",
       "id": "test05CarePlan",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-care-plan" ]
+      },
       "status": "active",
       "intent": "plan",
       "category": [ {
@@ -941,8 +1017,51 @@
     }
   }, {
     "resource": {
+      "resourceType": "Observation",
+      "id": "pcoWhatMattersStatementExample",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-what-matters-assessment" ]
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/pco/CodeSystem/wellbeing-concepts",
+          "code": "what-matters",
+          "display": "What Matters Most"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/pco/CodeSystem/va-whole-health-example",
+          "code": "relationships",
+          "display": "Family, Friends & Co-Workers"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/pcoGoalPatient"
+      },
+      "effectiveDateTime": "2024-03-27T14:30:00Z",
+      "performer": [ {
+        "reference": "Patient/pcoGoalPatient"
+      } ],
+      "valueString": "I would like to meet my friends again for morning walks, but my knee pain prevents me from doing that."
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/pcoWhatMattersStatementExample"
+    }
+  }, {
+    "resource": {
       "resourceType": "Patient",
       "id": "test01Patient",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" ]
+      },
       "identifier": [ {
         "use": "official",
         "system": "http://example.org",
@@ -963,6 +1082,9 @@
     "resource": {
       "resourceType": "Practitioner",
       "id": "pcoPractitionerGonzalez",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
       "identifier": [ {
         "use": "official",
         "system": "http://example.org",
@@ -982,8 +1104,50 @@
     }
   }, {
     "resource": {
+      "resourceType": "Goal",
+      "id": "goal-PCO-SDOH",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-goal-profile", "http://hl7.org/fhir/us/sdoh-clinicalcare/StructureDefinition/SDOHCC-Goal" ]
+      },
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "code": "in-progress"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-goal-domains",
+          "code": "physical-function",
+          "display": "Physical Function"
+        } ]
+      } ],
+      "description": {
+        "text": "Walk dog outside once a week"
+      },
+      "subject": {
+        "reference": "Patient/pcoGoalPatient"
+      },
+      "startDate": "2024-04-03",
+      "target": [ {
+        "dueDate": "2024-09-30"
+      } ],
+      "expressedBy": {
+        "reference": "Patient/pcoGoalPatient"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/goal-PCO-SDOH"
+    }
+  }, {
+    "resource": {
       "resourceType": "ServiceRequest",
       "id": "test06WalkOutsideActionStep",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest" ]
+      },
       "extension": [ {
         "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
         "valueReference": {
@@ -1025,6 +1189,9 @@
     "resource": {
       "resourceType": "Practitioner",
       "id": "pcoPractitionerAnderson",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner" ]
+      },
       "identifier": [ {
         "use": "official",
         "system": "http://example.org",
@@ -1046,6 +1213,9 @@
     "resource": {
       "resourceType": "CarePlan",
       "id": "test06CarePlan",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-care-plan" ]
+      },
       "status": "active",
       "intent": "plan",
       "category": [ {
@@ -1078,6 +1248,9 @@
     "resource": {
       "resourceType": "Goal",
       "id": "test06GoalWithGAS",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-goal-profile" ]
+      },
       "lifecycleStatus": "active",
       "achievementStatus": {
         "coding": [ {
@@ -1090,11 +1263,6 @@
           "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-goal-domains",
           "code": "physical-function",
           "display": "Physical Function"
-        } ]
-      }, {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-codes",
-          "code": "person-centered-goal"
         } ]
       } ],
       "description": {
@@ -1117,8 +1285,77 @@
     }
   }, {
     "resource": {
+      "resourceType": "Observation",
+      "id": "test05GASScoreBaseline",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-score-observation" ]
+      },
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "68489",
+          "display": "Goal attainment scale"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/test05Patient"
+      },
+      "focus": [ {
+        "reference": "Goal/test05GoalWithGAS"
+      } ],
+      "effectiveDateTime": "2024-02-03T10:15:00Z",
+      "performer": [ {
+        "reference": "Practitioner/pcoPractitionerGonzalez"
+      } ],
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "gas-less-than-expected",
+          "display": "Less than expected"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/test05GASScoreBaseline"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "pcoGoalPatient",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" ]
+      },
+      "identifier": [ {
+        "use": "official",
+        "system": "http://example.org",
+        "value": "ee8d4ac0-545c-4501-8d7e-646bfbda1db5"
+      } ],
+      "name": [ {
+        "family": "Lopez",
+        "given": [ "Camila" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1955-07-16"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/pcoGoalPatient"
+    }
+  }, {
+    "resource": {
       "resourceType": "Patient",
       "id": "test04Patient",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" ]
+      },
       "identifier": [ {
         "use": "official",
         "system": "http://example.org",
@@ -1138,47 +1375,10 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "test04GASScoretBaseline",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "68489",
-          "display": "Goal attainment scale"
-        } ]
-      },
-      "subject": {
-        "reference": "Patient/test04Patient"
-      },
-      "focus": [ {
-        "reference": "Goal/test04GoalWithGAS"
-      } ],
-      "effectiveDateTime": "2024-04-03T10:15:00Z",
-      "performer": [ {
-        "reference": "Practitioner/pcoPractitionerGonzalez"
-      } ],
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "gas-less-than-expected",
-          "display": "Less than expected"
-        } ]
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/test04GASScoretBaseline"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "test06GASScorePatientFollowupExample",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-score-observation" ]
+      },
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -1219,6 +1419,9 @@
     "resource": {
       "resourceType": "ServiceRequest",
       "id": "test04WalkOutsideActionStep",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest" ]
+      },
       "extension": [ {
         "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
         "valueReference": {
@@ -1260,6 +1463,9 @@
     "resource": {
       "resourceType": "ServiceRequest",
       "id": "test03WalkOutsideActionStep",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest" ]
+      },
       "extension": [ {
         "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
         "valueReference": {
@@ -1299,8 +1505,59 @@
     }
   }, {
     "resource": {
+      "resourceType": "Goal",
+      "id": "goal-PCO-eLTSS",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-goal-profile", "http://hl7.org/fhir/us/eltss/StructureDefinition/Goal-eltss" ]
+      },
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "code": "in-progress"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/pco/CodeSystem/wellbeing-concepts",
+          "code": "what-matters",
+          "display": "What Matters"
+        } ]
+      }, {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-goal-domains",
+          "code": "physical-function",
+          "display": "Physical Function"
+        } ]
+      } ],
+      "description": {
+        "text": "Walk dog outside once a week"
+      },
+      "subject": {
+        "reference": "Patient/pcoGoalPatient"
+      },
+      "startDate": "2024-04-03",
+      "target": [ {
+        "dueDate": "2024-09-30"
+      } ],
+      "expressedBy": {
+        "reference": "Patient/pcoGoalPatient"
+      },
+      "addresses": [ {
+        "reference": "Observation/pcoWhatMattersStatementExample"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/goal-PCO-eLTSS"
+    }
+  }, {
+    "resource": {
       "resourceType": "Observation",
-      "id": "test06GASScoretBaseline",
+      "id": "test04GASScoreBaseline",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-score-observation" ]
+      },
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -1316,10 +1573,10 @@
         } ]
       },
       "subject": {
-        "reference": "Patient/test06Patient"
+        "reference": "Patient/test04Patient"
       },
       "focus": [ {
-        "reference": "Goal/test06GoalWithGAS"
+        "reference": "Goal/test04GoalWithGAS"
       } ],
       "effectiveDateTime": "2024-04-03T10:15:00Z",
       "performer": [ {
@@ -1335,12 +1592,15 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/test06GASScoretBaseline"
+      "url": "Observation/test04GASScoreBaseline"
     }
   }, {
     "resource": {
       "resourceType": "Patient",
       "id": "test02Patient",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" ]
+      },
       "identifier": [ {
         "use": "official",
         "system": "http://example.org",

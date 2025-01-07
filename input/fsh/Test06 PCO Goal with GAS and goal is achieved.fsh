@@ -26,7 +26,7 @@ Usage: #example
 * description.text = "Walk dog outside once a week"
 // exclude optional GAS extensions
 
-Instance: test06GASScoretBaseline
+Instance: test06GASScoreBaseline
 InstanceOf: PCOGoalAttainmentScoreObservation
 Title: "Test 06 GAS Baseline Score"
 Usage: #example
@@ -90,4 +90,4 @@ Usage: #example
 * effectiveDateTime = "2024-07-16T10:15:00Z"
 * code = $LNC#68490 "Practitioner follow-up goal attainment scaling score"
 * focus = Reference(test06GoalWithGAS)
-* valueCodeableConcept = $LNC#LA6111-4 "Expected outcome"
+* valueCodeableConcept = $LNC#LA6111-4 "0"
