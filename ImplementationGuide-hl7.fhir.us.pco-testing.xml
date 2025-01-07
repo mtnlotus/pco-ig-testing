@@ -11,7 +11,7 @@
   <name value="PCOTesting"/>
   <title value="Person-Centered Outcomes Test Data"/>
   <status value="draft"/>
-  <date value="2024-12-14T16:28:44+00:00"/>
+  <date value="2025-01-07T22:14:59+00:00"/>
   <publisher value="HL7 International / Patient Care"/>
   <contact>
     <name value="HL7 International / Patient Care"/>
@@ -54,6 +54,31 @@
     <uri value="http://hl7.org/fhir/us/pco/ImplementationGuide/hl7.fhir.us.pco"/>
     <packageId value="hl7.fhir.us.pco"/>
     <version value="dev"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_pacio_pfe">
+    <uri value="http://hl7.org/fhir/us/pacio-pfe/ImplementationGuide/hl7.fhir.us.pacio-pfe"/>
+    <packageId value="hl7.fhir.us.pacio-pfe"/>
+    <version value="current"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_pacio_adi">
+    <uri value="http://hl7.org/fhir/us/pacio-adi/ImplementationGuide/hl7.fhir.us.pacio-adi"/>
+    <packageId value="hl7.fhir.us.pacio-adi"/>
+    <version value="current"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_sdoh_clinicalcare">
+    <uri value="http://hl7.org/fhir/us/sdoh-clinicalcare/ImplementationGuide/hl7.fhir.us.sdoh-clinicalcare"/>
+    <packageId value="hl7.fhir.us.sdoh-clinicalcare"/>
+    <version value="current"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_mcc">
+    <uri value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7.fhir.us.mcc"/>
+    <packageId value="hl7.fhir.us.mcc"/>
+    <version value="current"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_eltss">
+    <uri value="http://hl7.org/fhir/us/eltss/ImplementationGuide/hl7.fhir.us.eltss"/>
+    <packageId value="hl7.fhir.us.eltss"/>
+    <version value="current"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_us_core">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
@@ -508,6 +533,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/goal-PCO-eLTSS"/>
+      </reference>
+      <name value="PCO Goal with eLTSS elements"/>
+      <description value="Nothing added for eLTSS Goal"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Practitioner"/>
       </extension>
       <reference>
@@ -597,7 +633,7 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/test03GASScoretBaseline"/>
+        <reference value="Observation/test03GASScoreBaseline"/>
       </reference>
       <name value="Test 03 GAS Baseline Score"/>
       <exampleBoolean value="true"/>
@@ -649,7 +685,7 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/test04GASScoretBaseline"/>
+        <reference value="Observation/test04GASScoreBaseline"/>
       </reference>
       <name value="Test 04 GAS Baseline Score"/>
       <exampleBoolean value="true"/>
@@ -711,7 +747,7 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/test05GASScoretBaseline"/>
+        <reference value="Observation/test05GASScoreBaseline"/>
       </reference>
       <name value="Test 05 GAS Baseline Score"/>
       <exampleBoolean value="true"/>
@@ -773,7 +809,7 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/test06GASScoretBaseline"/>
+        <reference value="Observation/test06GASScoreBaseline"/>
       </reference>
       <name value="Test 06 GAS Baseline Score"/>
       <exampleBoolean value="true"/>
@@ -801,12 +837,44 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/goal-PCO-SDOH"/>
+      </reference>
+      <name value="Test 06 PCO Goal with GAS"/>
+      <description value="Walk dog outside once a week"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
         <reference value="Observation/test06GASScorePractitionerFollowupExample"/>
       </reference>
       <name value="Test 06 Practitioner GAS Follow-up Score, goal is achieved."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/pcoGoalPatient"/>
+      </reference>
+      <name value="Test Goals Patient"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/pcoWhatMattersStatementExample"/>
+      </reference>
+      <name value="What Matters Statement: Family &amp; Friends"/>
+      <description value="What Matters observation added by a Patient to record a free-text statement about a well-being focus area."/>
       <exampleBoolean value="true"/>
     </resource>
     <page>

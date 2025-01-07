@@ -2,6 +2,9 @@
 
 <Practitioner xmlns="http://hl7.org/fhir">
   <id value="pcoPractitionerAnderson"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+  </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner pcoPractitionerAnderson</b></p><a name="pcoPractitionerAnderson"> </a><a name="hcpcoPractitionerAnderson"> </a><a name="pcoPractitionerAnderson-en-US"> </a><p><b>identifier</b>: <code>http://example.org</code>/ee8d4ac0-545c-4501-8d7e-646bfbda6de8 (use: official, )</p><p><b>name</b>: John Anderson, MD</p><p><b>gender</b>: Male</p></div>
   </text>

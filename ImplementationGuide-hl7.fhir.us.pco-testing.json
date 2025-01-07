@@ -10,7 +10,7 @@
   "name" : "PCOTesting",
   "title" : "Person-Centered Outcomes Test Data",
   "status" : "draft",
-  "date" : "2024-12-14T16:28:44+00:00",
+  "date" : "2025-01-07T22:14:59+00:00",
   "publisher" : "HL7 International / Patient Care",
   "contact" : [{
     "name" : "HL7 International / Patient Care",
@@ -58,6 +58,36 @@
     "uri" : "http://hl7.org/fhir/us/pco/ImplementationGuide/hl7.fhir.us.pco",
     "packageId" : "hl7.fhir.us.pco",
     "version" : "dev"
+  },
+  {
+    "id" : "hl7_fhir_us_pacio_pfe",
+    "uri" : "http://hl7.org/fhir/us/pacio-pfe/ImplementationGuide/hl7.fhir.us.pacio-pfe",
+    "packageId" : "hl7.fhir.us.pacio-pfe",
+    "version" : "current"
+  },
+  {
+    "id" : "hl7_fhir_us_pacio_adi",
+    "uri" : "http://hl7.org/fhir/us/pacio-adi/ImplementationGuide/hl7.fhir.us.pacio-adi",
+    "packageId" : "hl7.fhir.us.pacio-adi",
+    "version" : "current"
+  },
+  {
+    "id" : "hl7_fhir_us_sdoh_clinicalcare",
+    "uri" : "http://hl7.org/fhir/us/sdoh-clinicalcare/ImplementationGuide/hl7.fhir.us.sdoh-clinicalcare",
+    "packageId" : "hl7.fhir.us.sdoh-clinicalcare",
+    "version" : "current"
+  },
+  {
+    "id" : "hl7_fhir_us_mcc",
+    "uri" : "http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7.fhir.us.mcc",
+    "packageId" : "hl7.fhir.us.mcc",
+    "version" : "current"
+  },
+  {
+    "id" : "hl7_fhir_us_eltss",
+    "uri" : "http://hl7.org/fhir/us/eltss/ImplementationGuide/hl7.fhir.us.eltss",
+    "packageId" : "hl7.fhir.us.eltss",
+    "version" : "current"
   },
   {
     "id" : "hl7_fhir_us_core",
@@ -675,6 +705,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/goal-PCO-eLTSS"
+      },
+      "name" : "PCO Goal with eLTSS elements",
+      "description" : "Nothing added for eLTSS Goal",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Practitioner"
       }],
       "reference" : {
@@ -772,7 +814,7 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/test03GASScoretBaseline"
+        "reference" : "Observation/test03GASScoreBaseline"
       },
       "name" : "Test 03 GAS Baseline Score",
       "exampleBoolean" : true
@@ -829,7 +871,7 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/test04GASScoretBaseline"
+        "reference" : "Observation/test04GASScoreBaseline"
       },
       "name" : "Test 04 GAS Baseline Score",
       "exampleBoolean" : true
@@ -897,7 +939,7 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/test05GASScoretBaseline"
+        "reference" : "Observation/test05GASScoreBaseline"
       },
       "name" : "Test 05 GAS Baseline Score",
       "exampleBoolean" : true
@@ -965,7 +1007,7 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/test06GASScoretBaseline"
+        "reference" : "Observation/test06GASScoreBaseline"
       },
       "name" : "Test 06 GAS Baseline Score",
       "exampleBoolean" : true
@@ -996,12 +1038,47 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/goal-PCO-SDOH"
+      },
+      "name" : "Test 06 PCO Goal with GAS",
+      "description" : "Walk dog outside once a week",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
         "reference" : "Observation/test06GASScorePractitionerFollowupExample"
       },
       "name" : "Test 06 Practitioner GAS Follow-up Score, goal is achieved.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/pcoGoalPatient"
+      },
+      "name" : "Test Goals Patient",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/pcoWhatMattersStatementExample"
+      },
+      "name" : "What Matters Statement: Family & Friends",
+      "description" : "What Matters observation added by a Patient to record a free-text statement about a well-being focus area.",
       "exampleBoolean" : true
     }],
     "page" : {

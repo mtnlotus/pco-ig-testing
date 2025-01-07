@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/pco-testing/Observation/pcoWhatMattersStatementExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "pcoWhatMattersStatementExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/pco/StructureDefinition/pco-what-matters-assessment"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/pco/StructureDefinition/pco-what-matters-assessment>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation pcoWhatMattersStatementExample</b></p><a name=\"pcoWhatMattersStatementExample\"> </a><a name=\"hcpcoWhatMattersStatementExample\"> </a><a name=\"pcoWhatMattersStatementExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://hl7.org/fhir/us/pco/CodeSystem/wellbeing-concepts what-matters}\">What Matters Most</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/us/pco/CodeSystem/va-whole-health-example relationships}\">Family, Friends &amp; Co-Workers</span></p><p><b>subject</b>: <a href=\"Patient-pcoGoalPatient.html\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>effective</b>: 2024-03-27 14:30:00+0000</p><p><b>performer</b>: <a href=\"Patient-pcoGoalPatient.html\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>value</b>: I would like to meet my friends again for morning walks, but my knee pain prevents me from doing that.</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/pco/CodeSystem/wellbeing-concepts"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "what-matters" ] ;
+       fhir:display [ fhir:v "What Matters Most" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "survey" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/pco/CodeSystem/va-whole-health-example"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "relationships" ] ;
+       fhir:display [ fhir:v "Family, Friends & Co-Workers" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/pco-testing/Patient/pcoGoalPatient> ;
+     fhir:reference [ fhir:v "Patient/pcoGoalPatient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-03-27T14:30:00Z"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://hl7.org/fhir/us/pco-testing/Patient/pcoGoalPatient> ;
+     fhir:reference [ fhir:v "Patient/pcoGoalPatient" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "I would like to meet my friends again for morning walks, but my knee pain prevents me from doing that."] . # 
+
+<http://hl7.org/fhir/us/pco-testing/Patient/pcoGoalPatient> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="pcoWhatMattersStatementExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/pco/StructureDefinition/pco-what-matters-assessment"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation pcoWhatMattersStatementExample</b></p><a name="pcoWhatMattersStatementExample"> </a><a name="hcpcoWhatMattersStatementExample"> </a><a name="pcoWhatMattersStatementExample-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://hl7.org/fhir/us/pco/CodeSystem/wellbeing-concepts what-matters}">What Matters Most</span>, <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/us/pco/CodeSystem/va-whole-health-example relationships}">Family, Friends &amp; Co-Workers</span></p><p><b>subject</b>: <a href="Patient-pcoGoalPatient.html">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>effective</b>: 2024-03-27 14:30:00+0000</p><p><b>performer</b>: <a href="Patient-pcoGoalPatient.html">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>value</b>: I would like to meet my friends again for morning walks, but my knee pain prevents me from doing that.</p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/us/pco/CodeSystem/wellbeing-concepts"/>
+      <code value="what-matters"/>
+      <display value="What Matters Most"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="survey"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/us/pco/CodeSystem/va-whole-health-example"/>
+      <code value="relationships"/>
+      <display value="Family, Friends &amp; Co-Workers"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/pcoGoalPatient"/>
+  </subject>
+  <effectiveDateTime value="2024-03-27T14:30:00Z"/>
+  <performer>
+    <reference value="Patient/pcoGoalPatient"/>
+  </performer>
+  <valueString value="I would like to meet my friends again for morning walks, but my knee pain prevents me from doing that."/>
+</Observation>

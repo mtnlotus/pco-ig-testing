@@ -1,37 +1,41 @@
 PCOTesting : Validation Results
 =========================================
 
-err = 25, warn = 19, info = 0
+err = 27, warn = 20, info = 17
 $--
 Generated $--. FHIR version $-- for hl7.fhir.us.pco-testing#$-- (canonical = http://hl7.org/fhir/us/pco-testing)
- Build Errors : 1 / 19 / 0
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test03CarePlan : 0 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test04CarePlan : 0 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test05CarePlan : 0 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test06CarePlan : 0 / 0 / 1
+ Build Errors : 1 / 20 / 0
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test03CarePlan : 0 / 0 / 2
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test04CarePlan : 0 / 0 / 2
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test05CarePlan : 0 / 0 / 2
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test06CarePlan : 0 / 0 / 2
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-goal-PCO-SDOH : 0 / 0 / 5
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-goal-PCO-eLTSS : 1 / 0 / 5
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test01GoalPainLevelExample : 0 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test02GoalWithGAS : 7 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test02GoalWithGAS : 4 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test03GoalWithGAS : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test04GoalWithGAS : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test05GoalWithGAS : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test06GoalWithGAS : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.pco-testing : 1 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test03GASScoretBaseline : 2 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test04GASScorePatientFollowupExample : 2 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test04GASScoretBaseline : 2 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test05GASScorePatientFollowupExample : 2 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test05GASScoretBaseline : 2 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test06GASScorePatientFollowupExample : 2 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test06GASScorePractitionerFollowupExample : 2 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test06GASScoretBaseline : 2 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-pcoWhatMattersStatementExample : 0 / 0 / 2
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test03GASScoreBaseline : 3 / 0 / 2
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test04GASScoreBaseline : 3 / 0 / 2
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test04GASScorePatientFollowupExample : 3 / 0 / 2
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test05GASScoreBaseline : 3 / 0 / 2
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test05GASScorePatientFollowupExample : 1 / 0 / 2
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test06GASScoreBaseline : 3 / 0 / 2
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test06GASScorePatientFollowupExample : 3 / 0 / 2
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test06GASScorePractitionerFollowupExample : 1 / 0 / 2
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Patient-pcoGoalPatient : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Patient-test01Patient : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Patient-test02Patient : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Patient-test03Patient : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Patient-test04Patient : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Patient-test05Patient : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Patient-test06Patient : 0 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Practitioner-pcoPractitionerAnderson : 0 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Practitioner-pcoPractitionerGonzalez : 0 / 0 / 1
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Practitioner-pcoPractitionerAnderson : 0 / 0 / 2
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Practitioner-pcoPractitionerGonzalez : 0 / 0 / 2
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/ServiceRequest-test03WalkOutsideActionStep : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/ServiceRequest-test04WalkOutsideActionStep : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/ServiceRequest-test05WalkOutsideActionStep : 0 / 0 / 1
@@ -40,33 +44,40 @@ Generated $--. FHIR version $-- for hl7.fhir.us.pco-testing#$-- (canonical = htt
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/test03CarePlan.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/test03WalkOutsideActionStep.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test03GASScoretBaseline.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test03GASScoreBaseline.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/test04CarePlan.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/test04WalkOutsideActionStep.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test04GASScoretBaseline.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test04GASScoreBaseline.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test04GASScorePatientFollowupExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/test05CarePlan.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/test05WalkOutsideActionStep.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test05GASScoretBaseline.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test05GASScoreBaseline.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test05GASScorePatientFollowupExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/test06CarePlan.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/test06WalkOutsideActionStep.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test06GASScoretBaseline.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test06GASScoreBaseline.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test06GASScorePatientFollowupExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/test06GASScorePractitionerFollowupExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/pcoGoalPatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: There is no jira specification file defined with the expected name of FHIR-us-pco-testing in the xml folder of the  https://github.com/HL7/Jira-Spec-Artifacts project.  This must exist before ballot or publication.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CarePlan-test03CarePlan.json ==
+INFORMATION: CarePlan/test03CarePlan: CarePlan.text.status: Reference to draft CodeSystem http://hl7.org/fhir/narrative-status|4.0.1
 == fsh-generated/resources/CarePlan-test04CarePlan.json ==
+INFORMATION: CarePlan/test04CarePlan: CarePlan.text.status: Reference to draft CodeSystem http://hl7.org/fhir/narrative-status|4.0.1
 == fsh-generated/resources/CarePlan-test05CarePlan.json ==
+INFORMATION: CarePlan/test05CarePlan: CarePlan.text.status: Reference to draft CodeSystem http://hl7.org/fhir/narrative-status|4.0.1
 == fsh-generated/resources/CarePlan-test06CarePlan.json ==
+INFORMATION: CarePlan/test06CarePlan: CarePlan.text.status: Reference to draft CodeSystem http://hl7.org/fhir/narrative-status|4.0.1
+== fsh-generated/resources/Goal-goal-PCO-SDOH.json ==
+INFORMATION: Goal/goal-PCO-SDOH: Goal.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/sdoh-clinicalcare/StructureDefinition/SDOHCC-Goal|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/Goal-goal-PCO-eLTSS.json ==
+INFORMATION: Goal/goal-PCO-eLTSS: Goal.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-goal-profile|0.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Goal/goal-PCO-eLTSS: Goal.category[0].coding[0].display: Wrong Display Name 'What Matters' for http://hl7.org/fhir/us/pco/CodeSystem/wellbeing-concepts#what-matters. Valid display is 'What Matters Most' (for the language(s) 'en')
 == fsh-generated/resources/Goal-test01GoalPainLevelExample.json ==
 == fsh-generated/resources/Goal-test02GoalWithGAS.json ==
-ERROR: Goal/test02GoalWithGAS: Goal.extension[0].extension[0].value.ofType(Coding).display: Wrong Display Name 'Much better than expected' for http://loinc.org#LA6113-0. There are no valid display names found for language(s) 'en'. Default display is '2 or more'
-ERROR: Goal/test02GoalWithGAS: Goal.extension[1].extension[0].value.ofType(Coding).display: Wrong Display Name 'Better than expected' for http://loinc.org#LA6112-2. There are no valid display names found for language(s) 'en'. Default display is '1'
-ERROR: Goal/test02GoalWithGAS: Goal.extension[2].extension[0].value.ofType(Coding).display: Wrong Display Name 'Expected outcome' for http://loinc.org#LA6111-4. There are no valid display names found for language(s) 'en'. Default display is '0'
 ERROR: Goal/test02GoalWithGAS: Goal.extension[3].extension[0].value.ofType(Coding).code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
 ERROR: Goal/test02GoalWithGAS: Goal.extension[3].extension[0].value.ofType(Coding): The code provided (http://loinc.org#gas-less-than-expected) was not found in the value set 'Follow-Up GAS Score Answers' (http://hl7.org/fhir/us/pco/ValueSet/gas-score-answers|0.2.0), and a code from this value set is required: The provided code 'http://loinc.org#gas-less-than-expected ('Less than expected')' was not found in the value set 'http://hl7.org/fhir/us/pco/ValueSet/gas-score-answers|0.2.0'; Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
 ERROR: Goal/test02GoalWithGAS: Goal.extension[4].extension[0].value.ofType(Coding).code: Unknown code 'gas-much-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
@@ -77,30 +88,45 @@ ERROR: Goal/test02GoalWithGAS: Goal.extension[4].extension[0].value.ofType(Codin
 == fsh-generated/resources/Goal-test06GoalWithGAS.json ==
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.us.pco-testing.json ==
 ERROR: ImplementationGuide/hl7.fhir.us.pco-testing: ImplementationGuide: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-== fsh-generated/resources/Observation-test03GASScoretBaseline.json ==
-ERROR: Observation/test03GASScoretBaseline: Observation.code.coding[0].code: Unknown code '68489' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Observation/test03GASScoretBaseline: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
+== fsh-generated/resources/Observation-pcoWhatMattersStatementExample.json ==
+INFORMATION: Observation/pcoWhatMattersStatementExample: Observation.category[1]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+== fsh-generated/resources/Observation-test03GASScoreBaseline.json ==
+INFORMATION: Observation/test03GASScoreBaseline: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+ERROR: Observation/test03GASScoreBaseline: Observation.code.coding[0].code: Unknown code '68489' in the CodeSystem 'http://loinc.org' version '2.78'
+ERROR: Observation/test03GASScoreBaseline: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
+ERROR: Observation/test03GASScoreBaseline: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Follow-Up GAS Score Answers' (http://hl7.org/fhir/us/pco/ValueSet/gas-score-answers|0.2.0), and a coding from this value set is required) (codes = http://loinc.org#gas-less-than-expected)
+== fsh-generated/resources/Observation-test04GASScoreBaseline.json ==
+INFORMATION: Observation/test04GASScoreBaseline: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+ERROR: Observation/test04GASScoreBaseline: Observation.code.coding[0].code: Unknown code '68489' in the CodeSystem 'http://loinc.org' version '2.78'
+ERROR: Observation/test04GASScoreBaseline: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
+ERROR: Observation/test04GASScoreBaseline: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Follow-Up GAS Score Answers' (http://hl7.org/fhir/us/pco/ValueSet/gas-score-answers|0.2.0), and a coding from this value set is required) (codes = http://loinc.org#gas-less-than-expected)
 == fsh-generated/resources/Observation-test04GASScorePatientFollowupExample.json ==
+INFORMATION: Observation/test04GASScorePatientFollowupExample: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
 ERROR: Observation/test04GASScorePatientFollowupExample: Observation.code.coding[0].code: Unknown code '68491' in the CodeSystem 'http://loinc.org' version '2.78'
 ERROR: Observation/test04GASScorePatientFollowupExample: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
-== fsh-generated/resources/Observation-test04GASScoretBaseline.json ==
-ERROR: Observation/test04GASScoretBaseline: Observation.code.coding[0].code: Unknown code '68489' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Observation/test04GASScoretBaseline: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
+ERROR: Observation/test04GASScorePatientFollowupExample: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Follow-Up GAS Score Answers' (http://hl7.org/fhir/us/pco/ValueSet/gas-score-answers|0.2.0), and a coding from this value set is required) (codes = http://loinc.org#gas-less-than-expected)
+== fsh-generated/resources/Observation-test05GASScoreBaseline.json ==
+INFORMATION: Observation/test05GASScoreBaseline: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+ERROR: Observation/test05GASScoreBaseline: Observation.code.coding[0].code: Unknown code '68489' in the CodeSystem 'http://loinc.org' version '2.78'
+ERROR: Observation/test05GASScoreBaseline: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
+ERROR: Observation/test05GASScoreBaseline: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Follow-Up GAS Score Answers' (http://hl7.org/fhir/us/pco/ValueSet/gas-score-answers|0.2.0), and a coding from this value set is required) (codes = http://loinc.org#gas-less-than-expected)
 == fsh-generated/resources/Observation-test05GASScorePatientFollowupExample.json ==
+INFORMATION: Observation/test05GASScorePatientFollowupExample: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
 ERROR: Observation/test05GASScorePatientFollowupExample: Observation.code.coding[0].code: Unknown code '68491' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Observation/test05GASScorePatientFollowupExample: Observation.value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Better than expected' for http://loinc.org#LA6112-2. There are no valid display names found for language(s) 'en'. Default display is '1'
-== fsh-generated/resources/Observation-test05GASScoretBaseline.json ==
-ERROR: Observation/test05GASScoretBaseline: Observation.code.coding[0].code: Unknown code '68489' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Observation/test05GASScoretBaseline: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
+== fsh-generated/resources/Observation-test06GASScoreBaseline.json ==
+INFORMATION: Observation/test06GASScoreBaseline: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+ERROR: Observation/test06GASScoreBaseline: Observation.code.coding[0].code: Unknown code '68489' in the CodeSystem 'http://loinc.org' version '2.78'
+ERROR: Observation/test06GASScoreBaseline: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
+ERROR: Observation/test06GASScoreBaseline: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Follow-Up GAS Score Answers' (http://hl7.org/fhir/us/pco/ValueSet/gas-score-answers|0.2.0), and a coding from this value set is required) (codes = http://loinc.org#gas-less-than-expected)
 == fsh-generated/resources/Observation-test06GASScorePatientFollowupExample.json ==
+INFORMATION: Observation/test06GASScorePatientFollowupExample: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
 ERROR: Observation/test06GASScorePatientFollowupExample: Observation.code.coding[0].code: Unknown code '68491' in the CodeSystem 'http://loinc.org' version '2.78'
 ERROR: Observation/test06GASScorePatientFollowupExample: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
+ERROR: Observation/test06GASScorePatientFollowupExample: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'Follow-Up GAS Score Answers' (http://hl7.org/fhir/us/pco/ValueSet/gas-score-answers|0.2.0), and a coding from this value set is required) (codes = http://loinc.org#gas-less-than-expected)
 == fsh-generated/resources/Observation-test06GASScorePractitionerFollowupExample.json ==
+INFORMATION: Observation/test06GASScorePractitionerFollowupExample: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
 ERROR: Observation/test06GASScorePractitionerFollowupExample: Observation.code.coding[0].code: Unknown code '68490' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Observation/test06GASScorePractitionerFollowupExample: Observation.value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Expected outcome' for http://loinc.org#LA6111-4. There are no valid display names found for language(s) 'en'. Default display is '0'
-== fsh-generated/resources/Observation-test06GASScoretBaseline.json ==
-ERROR: Observation/test06GASScoretBaseline: Observation.code.coding[0].code: Unknown code '68489' in the CodeSystem 'http://loinc.org' version '2.78'
-ERROR: Observation/test06GASScoretBaseline: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
+== fsh-generated/resources/Patient-pcoGoalPatient.json ==
 == fsh-generated/resources/Patient-test01Patient.json ==
 == fsh-generated/resources/Patient-test02Patient.json ==
 == fsh-generated/resources/Patient-test03Patient.json ==
@@ -108,7 +134,9 @@ ERROR: Observation/test06GASScoretBaseline: Observation.value.ofType(CodeableCon
 == fsh-generated/resources/Patient-test05Patient.json ==
 == fsh-generated/resources/Patient-test06Patient.json ==
 == fsh-generated/resources/Practitioner-pcoPractitionerAnderson.json ==
+INFORMATION: Practitioner/pcoPractitionerAnderson: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Practitioner-pcoPractitionerGonzalez.json ==
+INFORMATION: Practitioner/pcoPractitionerGonzalez: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/ServiceRequest-test03WalkOutsideActionStep.json ==
 == fsh-generated/resources/ServiceRequest-test04WalkOutsideActionStep.json ==
 == fsh-generated/resources/ServiceRequest-test05WalkOutsideActionStep.json ==

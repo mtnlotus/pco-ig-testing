@@ -9,9 +9,15 @@
 <http://hl7.org/fhir/us/pco-testing/Observation/test06GASScorePractitionerFollowupExample> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "test06GASScorePractitionerFollowupExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-score-observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-score-observation>
+     ] )
+  ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation test06GASScorePractitionerFollowupExample</b></p><a name=\"test06GASScorePractitionerFollowupExample\"> </a><a name=\"hctest06GASScorePractitionerFollowupExample\"> </a><a name=\"test06GASScorePractitionerFollowupExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 68490}\">Practitioner follow-up goal attainment scaling score</span></p><p><b>subject</b>: <a href=\"Patient-test06Patient.html\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>focus</b>: <a href=\"Goal-test06GoalWithGAS.html\">Goal: lifecycleStatus = active; achievementStatus = In Progress; category = Physical Function,Person-Centered Goal; description = ; start[x] = 2024-04-03</a></p><p><b>effective</b>: 2024-07-16 10:15:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-pcoPractitionerGonzalez.html\">Practitioner Maria Gonzalez, NBC-HWC</a></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6111-4}\">Expected outcome</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation test06GASScorePractitionerFollowupExample</b></p><a name=\"test06GASScorePractitionerFollowupExample\"> </a><a name=\"hctest06GASScorePractitionerFollowupExample\"> </a><a name=\"test06GASScorePractitionerFollowupExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 68490}\">Practitioner follow-up goal attainment scaling score</span></p><p><b>subject</b>: <a href=\"Patient-test06Patient.html\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>focus</b>: <a href=\"Goal-test06GoalWithGAS.html\">Goal: lifecycleStatus = active; achievementStatus = In Progress; category = Physical Function; description = ; start[x] = 2024-04-03</a></p><p><b>effective</b>: 2024-07-16 10:15:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-pcoPractitionerGonzalez.html\">Practitioner Maria Gonzalez, NBC-HWC</a></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA6111-4}\">0</span></p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
@@ -47,7 +53,7 @@
        a loinc:LA6111-4 ;
        fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "LA6111-4" ] ;
-       fhir:display [ fhir:v "Expected outcome" ]
+       fhir:display [ fhir:v "0" ]
      ] )
   ] . # 
 

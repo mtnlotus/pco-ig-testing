@@ -8,6 +8,12 @@
 <http://hl7.org/fhir/us/pco-testing/Practitioner/pcoPractitionerGonzalez> a fhir:Practitioner ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "pcoPractitionerGonzalez"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner>
+     ] )
+  ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner pcoPractitionerGonzalez</b></p><a name=\"pcoPractitionerGonzalez\"> </a><a name=\"hcpcoPractitionerGonzalez\"> </a><a name=\"pcoPractitionerGonzalez-en-US\"> </a><p><b>identifier</b>: <code>http://example.org</code>/ee8d4ac0-545c-4501-8d7e-646bfbda6cd7 (use: official, )</p><p><b>name</b>: Maria Gonzalez, NBC-HWC</p><p><b>gender</b>: Female</p></div>"

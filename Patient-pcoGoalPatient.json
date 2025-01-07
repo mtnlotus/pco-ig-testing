@@ -1,0 +1,22 @@
+{
+  "resourceType" : "Patient",
+  "id" : "pcoGoalPatient",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient pcoGoalPatient</b></p><a name=\"pcoGoalPatient\"> </a><a name=\"hcpcoGoalPatient\"> </a><a name=\"pcoGoalPatient-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5\u00a0(use:\u00a0official,\u00a0))</p><hr/></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://example.org",
+    "value" : "ee8d4ac0-545c-4501-8d7e-646bfbda1db5"
+  }],
+  "name" : [{
+    "family" : "Lopez",
+    "given" : ["Camila"]
+  }],
+  "gender" : "female",
+  "birthDate" : "1955-07-16"
+}

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PCOTesting"] ; # 
   fhir:title [ fhir:v "Person-Centered Outcomes Test Data"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-14T16:28:44+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-07T22:14:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Patient Care"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Patient Care" ] ;
@@ -71,6 +71,46 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.us.pco" ] ;
      fhir:version [ fhir:v "dev" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_us_pacio_pfe" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/pacio-pfe/ImplementationGuide/hl7.fhir.us.pacio-pfe"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/pacio-pfe/ImplementationGuide/hl7.fhir.us.pacio-pfe>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.pacio-pfe" ] ;
+     fhir:version [ fhir:v "current" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_us_pacio_adi" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/pacio-adi/ImplementationGuide/hl7.fhir.us.pacio-adi"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/pacio-adi/ImplementationGuide/hl7.fhir.us.pacio-adi>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.pacio-adi" ] ;
+     fhir:version [ fhir:v "current" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_us_sdoh_clinicalcare" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/sdoh-clinicalcare/ImplementationGuide/hl7.fhir.us.sdoh-clinicalcare"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/sdoh-clinicalcare/ImplementationGuide/hl7.fhir.us.sdoh-clinicalcare>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.sdoh-clinicalcare" ] ;
+     fhir:version [ fhir:v "current" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_us_mcc" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7.fhir.us.mcc"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7.fhir.us.mcc>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.mcc" ] ;
+     fhir:version [ fhir:v "current" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_us_eltss" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/eltss/ImplementationGuide/hl7.fhir.us.eltss"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/eltss/ImplementationGuide/hl7.fhir.us.eltss>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.eltss" ] ;
+     fhir:version [ fhir:v "current" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_us_core" ] ;
      fhir:uri [
@@ -592,6 +632,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Goal" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/pco-testing/Goal/goal-PCO-eLTSS> ;
+         fhir:reference [ fhir:v "Goal/goal-PCO-eLTSS" ]
+       ] ;
+       fhir:name [ fhir:v "PCO Goal with eLTSS elements" ] ;
+       fhir:description [ fhir:v "Nothing added for eLTSS Goal" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Practitioner" ]
        ] ) ;
        fhir:reference [
@@ -689,8 +741,8 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/pco-testing/Observation/test03GASScoretBaseline> ;
-         fhir:reference [ fhir:v "Observation/test03GASScoretBaseline" ]
+         fhir:link <http://hl7.org/fhir/us/pco-testing/Observation/test03GASScoreBaseline> ;
+         fhir:reference [ fhir:v "Observation/test03GASScoreBaseline" ]
        ] ;
        fhir:name [ fhir:v "Test 03 GAS Baseline Score" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
@@ -746,8 +798,8 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/pco-testing/Observation/test04GASScoretBaseline> ;
-         fhir:reference [ fhir:v "Observation/test04GASScoretBaseline" ]
+         fhir:link <http://hl7.org/fhir/us/pco-testing/Observation/test04GASScoreBaseline> ;
+         fhir:reference [ fhir:v "Observation/test04GASScoreBaseline" ]
        ] ;
        fhir:name [ fhir:v "Test 04 GAS Baseline Score" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
@@ -814,8 +866,8 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/pco-testing/Observation/test05GASScoretBaseline> ;
-         fhir:reference [ fhir:v "Observation/test05GASScoretBaseline" ]
+         fhir:link <http://hl7.org/fhir/us/pco-testing/Observation/test05GASScoreBaseline> ;
+         fhir:reference [ fhir:v "Observation/test05GASScoreBaseline" ]
        ] ;
        fhir:name [ fhir:v "Test 05 GAS Baseline Score" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
@@ -882,8 +934,8 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/pco-testing/Observation/test06GASScoretBaseline> ;
-         fhir:reference [ fhir:v "Observation/test06GASScoretBaseline" ]
+         fhir:link <http://hl7.org/fhir/us/pco-testing/Observation/test06GASScoreBaseline> ;
+         fhir:reference [ fhir:v "Observation/test06GASScoreBaseline" ]
        ] ;
        fhir:name [ fhir:v "Test 06 GAS Baseline Score" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
@@ -913,6 +965,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Goal" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/pco-testing/Goal/goal-PCO-SDOH> ;
+         fhir:reference [ fhir:v "Goal/goal-PCO-SDOH" ]
+       ] ;
+       fhir:name [ fhir:v "Test 06 PCO Goal with GAS" ] ;
+       fhir:description [ fhir:v "Walk dog outside once a week" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
@@ -920,6 +984,29 @@
          fhir:reference [ fhir:v "Observation/test06GASScorePractitionerFollowupExample" ]
        ] ;
        fhir:name [ fhir:v "Test 06 Practitioner GAS Follow-up Score, goal is achieved." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/pco-testing/Patient/pcoGoalPatient> ;
+         fhir:reference [ fhir:v "Patient/pcoGoalPatient" ]
+       ] ;
+       fhir:name [ fhir:v "Test Goals Patient" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/pco-testing/Observation/pcoWhatMattersStatementExample> ;
+         fhir:reference [ fhir:v "Observation/pcoWhatMattersStatementExample" ]
+       ] ;
+       fhir:name [ fhir:v "What Matters Statement: Family & Friends" ] ;
+       fhir:description [ fhir:v "What Matters observation added by a Patient to record a free-text statement about a well-being focus area." ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] ) ;
      fhir:page [
@@ -990,6 +1077,8 @@
 
 <http://hl7.org/fhir/us/pco-testing/Practitioner/pcoPractitionerGonzalez> a fhir:us .
 
+<http://hl7.org/fhir/us/pco-testing/Goal/goal-PCO-eLTSS> a fhir:us .
+
 <http://hl7.org/fhir/us/pco-testing/Practitioner/pcoPractitionerAnderson> a fhir:us .
 
 <http://hl7.org/fhir/us/pco-testing/Patient/test01Patient> a fhir:us .
@@ -1006,7 +1095,7 @@
 
 <http://hl7.org/fhir/us/pco-testing/CarePlan/test03CarePlan> a fhir:us .
 
-<http://hl7.org/fhir/us/pco-testing/Observation/test03GASScoretBaseline> a fhir:us .
+<http://hl7.org/fhir/us/pco-testing/Observation/test03GASScoreBaseline> a fhir:us .
 
 <http://hl7.org/fhir/us/pco-testing/Goal/test03GoalWithGAS> a fhir:us .
 
@@ -1016,7 +1105,7 @@
 
 <http://hl7.org/fhir/us/pco-testing/CarePlan/test04CarePlan> a fhir:us .
 
-<http://hl7.org/fhir/us/pco-testing/Observation/test04GASScoretBaseline> a fhir:us .
+<http://hl7.org/fhir/us/pco-testing/Observation/test04GASScoreBaseline> a fhir:us .
 
 <http://hl7.org/fhir/us/pco-testing/Observation/test04GASScorePatientFollowupExample> a fhir:us .
 
@@ -1028,7 +1117,7 @@
 
 <http://hl7.org/fhir/us/pco-testing/CarePlan/test05CarePlan> a fhir:us .
 
-<http://hl7.org/fhir/us/pco-testing/Observation/test05GASScoretBaseline> a fhir:us .
+<http://hl7.org/fhir/us/pco-testing/Observation/test05GASScoreBaseline> a fhir:us .
 
 <http://hl7.org/fhir/us/pco-testing/Observation/test05GASScorePatientFollowupExample> a fhir:us .
 
@@ -1040,13 +1129,19 @@
 
 <http://hl7.org/fhir/us/pco-testing/CarePlan/test06CarePlan> a fhir:us .
 
-<http://hl7.org/fhir/us/pco-testing/Observation/test06GASScoretBaseline> a fhir:us .
+<http://hl7.org/fhir/us/pco-testing/Observation/test06GASScoreBaseline> a fhir:us .
 
 <http://hl7.org/fhir/us/pco-testing/Observation/test06GASScorePatientFollowupExample> a fhir:us .
 
 <http://hl7.org/fhir/us/pco-testing/Goal/test06GoalWithGAS> a fhir:us .
 
+<http://hl7.org/fhir/us/pco-testing/Goal/goal-PCO-SDOH> a fhir:us .
+
 <http://hl7.org/fhir/us/pco-testing/Observation/test06GASScorePractitionerFollowupExample> a fhir:us .
+
+<http://hl7.org/fhir/us/pco-testing/Patient/pcoGoalPatient> a fhir:us .
+
+<http://hl7.org/fhir/us/pco-testing/Observation/pcoWhatMattersStatementExample> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

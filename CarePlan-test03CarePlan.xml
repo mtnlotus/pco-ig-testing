@@ -2,8 +2,11 @@
 
 <CarePlan xmlns="http://hl7.org/fhir">
   <id value="test03CarePlan"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/pco/StructureDefinition/pco-care-plan"/>
+  </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CarePlan test03CarePlan</b></p><a name="test03CarePlan"> </a><a name="hctest03CarePlan"> </a><a name="test03CarePlan-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title="Codes:{http://hl7.org/fhir/us/core/CodeSystem/careplan-category assess-plan}">Assessment and Plan of Treatment</span></p><p><b>subject</b>: <a href="Patient-test03Patient.html">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>period</b>: 2024-04-03 --&gt; 2024-10-31</p><p><b>goal</b>: <a href="Goal-test03GoalWithGAS.html">Goal: lifecycleStatus = active; achievementStatus = In Progress; category = Physical Function,Person-Centered Goal; description = ; start[x] = 2024-04-03</a></p><h3>Activities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="ServiceRequest-test03WalkOutsideActionStep.html">ServiceRequest </a></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CarePlan test03CarePlan</b></p><a name="test03CarePlan"> </a><a name="hctest03CarePlan"> </a><a name="test03CarePlan-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title="Codes:{http://hl7.org/fhir/us/core/CodeSystem/careplan-category assess-plan}">Assessment and Plan of Treatment</span></p><p><b>subject</b>: <a href="Patient-test03Patient.html">Camila Lopez  Female, DoB: 1955-07-16 ( http://example.org#ee8d4ac0-545c-4501-8d7e-646bfbda1db5 (use: official, ))</a></p><p><b>period</b>: 2024-04-03 --&gt; 2024-10-31</p><p><b>goal</b>: <a href="Goal-test03GoalWithGAS.html">Goal: lifecycleStatus = active; achievementStatus = In Progress; category = Physical Function; description = ; start[x] = 2024-04-03</a></p><h3>Activities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="ServiceRequest-test03WalkOutsideActionStep.html">ServiceRequest </a></td></tr></table></div>
   </text>
   <status value="active"/>
   <intent value="plan"/>
