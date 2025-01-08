@@ -3,7 +3,7 @@ PCOTesting : Validation Results
 
 err = 27, warn = 20, info = 17
 IG Publisher Version: 1.8.6
-Generated Tue Jan 07 22:16:23 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.pco-testing#0.1.0 (canonical = http://hl7.org/fhir/us/pco-testing)
+Generated Wed Jan 08 19:12:26 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.pco-testing#0.1.0 (canonical = http://hl7.org/fhir/us/pco-testing)
  Build Errors : 1 / 20 / 0
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test03CarePlan : 0 / 0 / 2
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test04CarePlan : 0 / 0 / 2
