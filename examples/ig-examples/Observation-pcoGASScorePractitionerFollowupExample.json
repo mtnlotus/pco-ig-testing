@@ -1,0 +1,57 @@
+{
+  "resourceType": "Observation",
+  "id": "pcoGASScorePractitionerFollowupExample",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "functional-status",
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
+          "display": "Functional Status"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "survey",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/pcoPractitionerGonzalez"
+    }
+  ],
+  "focus": [
+    {
+      "reference": "Goal/pcoGoalWalkDogExample"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "LA6111-4",
+        "system": "http://loinc.org",
+        "display": "0"
+      }
+    ],
+    "text": "Expected outcome"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/pcoPatientJones"
+  },
+  "effectiveDateTime": "2024-05-22T10:15:00Z",
+  "code": {
+    "coding": [
+      {
+        "code": "68490",
+        "system": "http://loinc.org",
+        "display": "Practitioner follow-up goal attainment scaling score"
+      }
+    ]
+  }
+}

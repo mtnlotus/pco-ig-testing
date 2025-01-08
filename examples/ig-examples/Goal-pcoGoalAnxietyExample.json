@@ -1,0 +1,55 @@
+{
+  "resourceType": "Goal",
+  "id": "pcoGoalAnxietyExample",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "emotional-and-mental-health",
+          "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-goal-domains",
+          "display": "Emotional And Mental Health"
+        }
+      ]
+    }
+  ],
+  "target": [
+    {
+      "detailQuantity": {
+        "comparator": "<",
+        "value": 6,
+        "code": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "unit": "score"
+      },
+      "dueDate": "2024-12-31",
+      "measure": {
+        "coding": [
+          {
+            "code": "70274-6",
+            "system": "http://loinc.org",
+            "display": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+          }
+        ]
+      }
+    }
+  ],
+  "description": {
+    "text": "Reduce to mild anxiety level score"
+  },
+  "lifecycleStatus": "active",
+  "achievementStatus": {
+    "coding": [
+      {
+        "code": "in-progress",
+        "system": "http://terminology.hl7.org/CodeSystem/goal-achievement"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/pcoPatientLopez"
+  },
+  "expressedBy": {
+    "reference": "Practitioner/pcoPractitionerAnderson"
+  },
+  "startDate": "2024-08-11"
+}

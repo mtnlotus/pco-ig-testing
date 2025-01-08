@@ -1,0 +1,48 @@
+{
+  "resourceType": "Observation",
+  "id": "ppcCareTradeOffHelpfulArthritisCream",
+  "focus": [
+    {
+      "reference": "Goal/ppcGoalGrillForFamily"
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Patient/ppcPatientMrK"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "medications",
+        "system": "http://hl7.org/fhir/us/pco/CodeSystem/ppc-care-tradeoff-concepts",
+        "display": "Medications"
+      }
+    ],
+    "text": "Arthritis cream"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "survey",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "helpful-care",
+        "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-care-tradeoff-choice-codes",
+        "display": "Helpful"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ppcPatientMrK"
+  },
+  "effectiveDateTime": "2025-01-02T15:05:00Z"
+}

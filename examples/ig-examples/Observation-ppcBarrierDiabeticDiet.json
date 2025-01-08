@@ -1,0 +1,39 @@
+{
+  "resourceType": "Observation",
+  "id": "ppcBarrierDiabeticDiet",
+  "focus": [
+    {
+      "reference": "Goal/ppcGoalGrillForFamily"
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Patient/ppcPatientMrK"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "survey",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "452341000124107",
+        "system": "http://snomed.info/sct",
+        "display": "Assessment of barriers to meet care plan goals performed"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ppcPatientMrK"
+  },
+  "effectiveDateTime": "2025-01-02T15:05:00Z",
+  "valueString": "Diabetic diet restrictions"
+}

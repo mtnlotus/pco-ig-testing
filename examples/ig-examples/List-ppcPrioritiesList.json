@@ -1,0 +1,43 @@
+{
+  "resourceType": "List",
+  "id": "ppcPrioritiesList",
+  "entry": [
+    {
+      "item": {
+        "reference": "Observation/ppcWhatMattersActivitiesWithFamily"
+      }
+    },
+    {
+      "item": {
+        "reference": "Observation/ppcBarrierFeelingTired"
+      }
+    },
+    {
+      "item": {
+        "reference": "Observation/ppcCareTradeOffBurdensomeSpecialDiet"
+      }
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "81340-2",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "orderedBy": {
+    "coding": [
+      {
+        "code": "priority",
+        "system": "http://terminology.hl7.org/CodeSystem/list-order"
+      }
+    ]
+  },
+  "status": "current",
+  "mode": "working",
+  "subject": {
+    "reference": "Patient/ppcPatientMrK"
+  },
+  "date": "2025-01-02T15:05:00Z"
+}

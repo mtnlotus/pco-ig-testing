@@ -1,0 +1,29 @@
+{
+  "resourceType": "Practitioner",
+  "id": "pcoPractitionerGonzalez",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://example.org",
+      "value": "ee8d4ac0-545c-4501-8d7e-646bfbda6cd7"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Maria"
+      ],
+      "suffix": [
+        "NBC-HWC"
+      ],
+      "family": "Gonzalez",
+      "text": "Maria Gonzalez, NBC-HWC"
+    }
+  ],
+  "gender": "female"
+}

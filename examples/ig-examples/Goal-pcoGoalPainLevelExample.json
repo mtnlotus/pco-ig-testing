@@ -1,0 +1,48 @@
+{
+  "resourceType": "Goal",
+  "id": "pcoGoalPainLevelExample",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "what-matters",
+          "system": "http://hl7.org/fhir/us/pco/CodeSystem/wellbeing-concepts",
+          "display": "What Matters"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "physical-function",
+          "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-goal-domains",
+          "display": "Physical Function"
+        }
+      ]
+    }
+  ],
+  "target": [
+    {
+      "dueDate": "2024-06-30"
+    }
+  ],
+  "description": {
+    "text": "Maintain pain level below 5 while walking"
+  },
+  "lifecycleStatus": "active",
+  "achievementStatus": {
+    "coding": [
+      {
+        "code": "in-progress",
+        "system": "http://terminology.hl7.org/CodeSystem/goal-achievement"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/pcoPatientJones"
+  },
+  "expressedBy": {
+    "reference": "Patient/pcoPatientJones"
+  },
+  "startDate": "2024-02-15"
+}

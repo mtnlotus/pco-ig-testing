@@ -1,0 +1,54 @@
+{
+  "resourceType": "Goal",
+  "id": "ppcGoalGrillForFamily",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "what-matters",
+          "system": "http://hl7.org/fhir/us/pco/CodeSystem/wellbeing-concepts",
+          "display": "What Matters"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "social-functioning",
+          "system": "http://hl7.org/fhir/us/pco/CodeSystem/pco-goal-domains",
+          "display": "Social Functioning"
+        }
+      ]
+    }
+  ],
+  "target": [
+    {
+      "dueDate": "2025-06-30"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Observation/ppcWhatMattersActivitiesWithFamily",
+      "display": "PPC What Matters: Activities with Family"
+    }
+  ],
+  "description": {
+    "text": "Grill for my family every Sunday when the weather is nice."
+  },
+  "lifecycleStatus": "active",
+  "achievementStatus": {
+    "coding": [
+      {
+        "code": "in-progress",
+        "system": "http://terminology.hl7.org/CodeSystem/goal-achievement"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ppcPatientMrK"
+  },
+  "expressedBy": {
+    "reference": "Patient/ppcPatientMrK"
+  },
+  "startDate": "2025-01-02"
+}

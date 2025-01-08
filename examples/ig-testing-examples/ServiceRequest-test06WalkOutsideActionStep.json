@@ -1,0 +1,45 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "test06WalkOutsideActionStep",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest"
+    ]
+  },
+  "performer": [
+    {
+      "reference": "Patient/test06Patient"
+    }
+  ],
+  "code": {
+    "text": "Walk outside without my dog"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
+      "valueReference": {
+        "reference": "Goal/test06GoalWithGAS"
+      }
+    }
+  ],
+  "occurrenceTiming": {
+    "repeat": {
+      "boundsPeriod": {
+        "start": "2024-04-03",
+        "end": "2024-04-30"
+      },
+      "frequency": 2,
+      "periodUnit": "wk"
+    }
+  },
+  "status": "active",
+  "intent": "plan",
+  "subject": {
+    "reference": "Patient/test06Patient"
+  },
+  "requester": {
+    "reference": "Practitioner/pcoPractitionerGonzalez"
+  },
+  "patientInstruction": "Start with a short walk to the corner of your block to gain confidence in your walking.",
+  "authoredOn": "2024-04-03"
+}

@@ -1,0 +1,45 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ppcPhysicalTherapyReferral",
+  "code": {
+    "coding": [
+      {
+        "code": "91251008",
+        "system": "http://snomed.info/sct",
+        "display": "Physical therapy procedure (regime/therapy)"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
+      "valueReference": {
+        "reference": "Goal/ppcGoalGrillForFamily"
+      }
+    }
+  ],
+  "occurrenceTiming": {
+    "repeat": {
+      "boundsPeriod": {
+        "start": "2025-01-05",
+        "end": "2025-03-05"
+      },
+      "frequency": 1,
+      "periodUnit": "wk"
+    }
+  },
+  "note": [
+    {
+      "text": "Trial of physical therapy focused on improving stamina and energy"
+    }
+  ],
+  "status": "active",
+  "intent": "plan",
+  "subject": {
+    "reference": "Patient/ppcPatientMrK"
+  },
+  "requester": {
+    "reference": "Practitioner/pcoPractitionerAnderson"
+  },
+  "authoredOn": "2025-01-05"
+}

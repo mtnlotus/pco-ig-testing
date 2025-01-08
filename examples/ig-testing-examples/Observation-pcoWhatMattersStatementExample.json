@@ -1,0 +1,48 @@
+{
+  "resourceType": "Observation",
+  "id": "pcoWhatMattersStatementExample",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/pco/StructureDefinition/pco-what-matters-assessment"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "what-matters",
+          "system": "http://hl7.org/fhir/us/pco/CodeSystem/wellbeing-concepts",
+          "display": "What Matters Most"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Patient/pcoGoalPatient"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "relationships",
+        "system": "http://hl7.org/fhir/us/pco/CodeSystem/va-whole-health-example",
+        "display": "Family, Friends & Co-Workers"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/pcoGoalPatient"
+  },
+  "effectiveDateTime": "2024-03-27T14:30:00Z",
+  "valueString": "I would like to meet my friends again for morning walks, but my knee pain prevents me from doing that."
+}

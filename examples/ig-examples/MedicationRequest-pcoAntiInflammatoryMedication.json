@@ -1,0 +1,35 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "pcoAntiInflammatoryMedication",
+  "dosageInstruction": [
+    {
+      "timing": {
+        "repeat": {
+          "boundsPeriod": {
+            "start": "2024-02-22",
+            "end": "2024-06-30"
+          }
+        }
+      },
+      "asNeededBoolean": true,
+      "patientInstruction": "Anti-inflammatory gel applied to knee 30 minutes before exercise"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "subject": {
+    "reference": "Patient/pcoPatientJones"
+  },
+  "requester": {
+    "reference": "Practitioner/pcoPractitionerAnderson"
+  },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "2550740",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "Aleve Arthritis Pain 1 % Topical Gel"
+      }
+    ]
+  }
+}

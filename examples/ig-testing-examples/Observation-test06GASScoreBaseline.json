@@ -1,0 +1,52 @@
+{
+  "resourceType": "Observation",
+  "id": "test06GASScoreBaseline",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-score-observation"
+    ]
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/pcoPractitionerGonzalez"
+    }
+  ],
+  "focus": [
+    {
+      "reference": "Goal/test06GoalWithGAS"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/test06Patient"
+  },
+  "effectiveDateTime": "2024-04-03T10:15:00Z",
+  "code": {
+    "coding": [
+      {
+        "code": "68489",
+        "system": "http://loinc.org",
+        "display": "Goal attainment scale"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "gas-less-than-expected",
+        "system": "http://loinc.org",
+        "display": "Less than expected"
+      }
+    ]
+  }
+}

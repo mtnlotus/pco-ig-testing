@@ -1,0 +1,43 @@
+{
+  "resourceType": "Observation",
+  "id": "ppcWhatMattersActivitiesWithFamily",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "what-matters",
+          "system": "http://hl7.org/fhir/us/pco/CodeSystem/wellbeing-concepts",
+          "display": "What Matters"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "survey",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Patient/ppcPatientMrK"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "ppc-wm-2",
+        "system": "http://hl7.org/fhir/us/pco/CodeSystem/ppc-what-matters-concepts",
+        "display": "Doing activities with family and friends"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ppcPatientMrK"
+  },
+  "effectiveDateTime": "2025-01-02T15:05:00Z",
+  "valueBoolean": true
+}

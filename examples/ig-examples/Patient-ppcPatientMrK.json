@@ -1,0 +1,21 @@
+{
+  "resourceType": "Patient",
+  "id": "ppcPatientMrK",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://example.org",
+      "value": "ee8d4ac0-545c-4501-8d7e-646bfbda1dz4"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Mr."
+      ],
+      "family": "K"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1948-10-07"
+}

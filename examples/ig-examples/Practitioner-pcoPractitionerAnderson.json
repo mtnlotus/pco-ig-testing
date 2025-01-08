@@ -1,0 +1,24 @@
+{
+  "resourceType": "Practitioner",
+  "id": "pcoPractitionerAnderson",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://example.org",
+      "value": "ee8d4ac0-545c-4501-8d7e-646bfbda6de8"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "John"
+      ],
+      "suffix": [
+        "MD"
+      ],
+      "family": "Anderson",
+      "text": "John Anderson, MD"
+    }
+  ],
+  "gender": "male"
+}
