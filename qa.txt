@@ -1,16 +1,16 @@
 PCOTesting : Validation Results
 =========================================
 
-err = 27, warn = 20, info = 17
-IG Publisher Version: 1.8.6
-Generated Wed Jan 08 19:12:26 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.pco-testing#0.1.0 (canonical = http://hl7.org/fhir/us/pco-testing)
+err = 27, warn = 20, info = 18
+IG Publisher Version: 1.8.7
+Generated Wed Jan 15 14:14:22 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.pco-testing#0.1.0 (canonical = http://hl7.org/fhir/us/pco-testing)
  Build Errors : 1 / 20 / 0
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test03CarePlan : 0 / 0 / 2
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test04CarePlan : 0 / 0 / 2
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test05CarePlan : 0 / 0 / 2
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/CarePlan-test06CarePlan : 0 / 0 / 2
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-goal-PCO-SDOH : 0 / 0 / 5
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-goal-PCO-eLTSS : 1 / 0 / 5
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-goal-PCO-eLTSS : 0 / 0 / 5
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test01GoalPainLevelExample : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test02GoalWithGAS : 4 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test03GoalWithGAS : 0 / 0 / 1
@@ -18,7 +18,7 @@ Generated Wed Jan 08 19:12:26 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.pco-t
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test05GoalWithGAS : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Goal-test06GoalWithGAS : 0 / 0 / 1
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.pco-testing : 1 / 0 / 1
- /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-pcoWhatMattersStatementExample : 0 / 0 / 2
+ /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-pcoWhatMattersStatementExample : 1 / 0 / 3
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test03GASScoreBaseline : 3 / 0 / 2
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test04GASScoreBaseline : 3 / 0 / 2
  /home/runner/work/pco-ig-testing/pco-ig-testing/fsh-generated/resources/Observation-test04GASScorePatientFollowupExample : 3 / 0 / 2
@@ -74,8 +74,7 @@ INFORMATION: CarePlan/test06CarePlan: CarePlan.text.status: Reference to draft C
 == fsh-generated/resources/Goal-goal-PCO-SDOH.json ==
 INFORMATION: Goal/goal-PCO-SDOH: Goal.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/sdoh-clinicalcare/StructureDefinition/SDOHCC-Goal|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Goal-goal-PCO-eLTSS.json ==
-INFORMATION: Goal/goal-PCO-eLTSS: Goal.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-goal-profile|0.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Goal/goal-PCO-eLTSS: Goal.category[0].coding[0].display: Wrong Display Name 'What Matters' for http://hl7.org/fhir/us/pco/CodeSystem/wellbeing-concepts#what-matters. Valid display is 'What Matters Most' (for the language(s) 'en')
+INFORMATION: Goal/goal-PCO-eLTSS: Goal.addresses[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/pco/StructureDefinition/pco-gas-goal-profile|0.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Goal-test01GoalPainLevelExample.json ==
 == fsh-generated/resources/Goal-test02GoalWithGAS.json ==
 ERROR: Goal/test02GoalWithGAS: Goal.extension[3].extension[0].value.ofType(Coding).code: Unknown code 'gas-less-than-expected' in the CodeSystem 'http://loinc.org' version '2.78'
@@ -89,6 +88,8 @@ ERROR: Goal/test02GoalWithGAS: Goal.extension[4].extension[0].value.ofType(Codin
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.us.pco-testing.json ==
 ERROR: ImplementationGuide/hl7.fhir.us.pco-testing: ImplementationGuide: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 == fsh-generated/resources/Observation-pcoWhatMattersStatementExample.json ==
+INFORMATION: Observation/pcoWhatMattersStatementExample: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/pco/StructureDefinition/pco-what-matters-assessment|0.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Observation/pcoWhatMattersStatementExample: Observation.category[0].coding[0].display: Wrong Display Name 'What Matters Most' for http://hl7.org/fhir/us/pco/CodeSystem/wellbeing-concepts#what-matters. Valid display is 'What Matters' (for the language(s) 'en')
 INFORMATION: Observation/pcoWhatMattersStatementExample: Observation.category[1]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
 == fsh-generated/resources/Observation-test03GASScoreBaseline.json ==
 INFORMATION: Observation/test03GASScoreBaseline: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
