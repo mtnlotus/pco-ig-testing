@@ -4,7 +4,7 @@ tooling_jar=tooling-cli-3.4.0.jar
 input_cache_path=./input-cache
 ig_ini_path=$PWD/ig.ini
 
-bundle_args="-BundleResources -ptd=examples/ig-examples -op=bundles/examples -v=r4 -bid=pco-ig-examples"
+bundle_args="-BundleResources -ptd=fsh-generated/resources -op=bundles/test-data -v=r4 -bid=pco-ig-test-data"
 
 set -e
 echo Checking internet connection...
