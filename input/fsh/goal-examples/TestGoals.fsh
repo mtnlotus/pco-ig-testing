@@ -28,7 +28,7 @@ Title: "What Matters Statement: Family & Friends"
 Description: "What Matters observation added by a Patient to record a free-text statement about a well-being focus area."
 Usage: #example
 * status = #final 
-* category[what-matters] = WellBeingConcepts#what-matters "What Matters Most"
+* category[pco] = PCOConcepts#what-matters "What Matters Most"
 * code = VAWholeHealthExample#relationships "Family, Friends & Co-Workers"
 * subject = Reference(pcoGoalPatient)
 * performer = Reference(pcoGoalPatient)
@@ -76,7 +76,7 @@ Usage: #example
 * meta.profile = $ELTSS-Goal
 * lifecycleStatus = #active
 * achievementStatus = $GoalAchievement#in-progress
-* category[what-matters] = WellBeingConcepts#what-matters "What Matters"
+* category[pco] = PCOConcepts#what-matters "What Matters"
 * category[goal-domain] = PCOGoalDomains#physical-function "Physical Function"
 * subject = Reference(pcoGoalPatient)
 * expressedBy = Reference(pcoGoalPatient)
